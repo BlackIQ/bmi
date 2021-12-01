@@ -37,7 +37,7 @@ class bmiDrawer extends StatelessWidget {
           DrawerItemWidget(
             text: 'Exit',
             icon: Icons.exit_to_app,
-            onTap: exit(1),
+            onTap: () => exit(1),
           ),
         ],
       ),

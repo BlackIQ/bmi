@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:io';
 
 class DrawerItemWidget extends StatelessWidget {
   DrawerItemWidget({required this.text, required this.icon, required this.onTap});
@@ -25,7 +24,7 @@ class DrawerItemWidget extends StatelessWidget {
           ),
         ],
       ),
-      onTap: () => onTap,
+      onTap: onTap,
     );
   }
 }
