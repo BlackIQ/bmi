@@ -3,19 +3,18 @@ import 'package:bmicalculator/app/widgets/field/field.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class bmiGetRange extends StatefulWidget {
-  bmiGetRange({@required this.bmi});
+class BmiGetRange extends StatefulWidget {
+  BmiGetRange({@required this.bmi});
   final bmi;
 
   @override
-  _bmiGetRangeState createState() => _bmiGetRangeState();
+  _BmiGetRangeState createState() => _BmiGetRangeState();
 }
 
-class _bmiGetRangeState extends State<bmiGetRange> {
+class _BmiGetRangeState extends State<BmiGetRange> {
   @override
   Widget build(BuildContext context) {
     final bmi = widget.bmi;
-
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -25,7 +24,7 @@ class _bmiGetRangeState extends State<bmiGetRange> {
         centerTitle: true,
         elevation: 0,
       ),
-      body: _build(),
+      body: _build(bmi),
     );
   }
 
@@ -37,7 +36,7 @@ class _bmiGetRangeState extends State<bmiGetRange> {
     });
   }
 
-  Widget _build() {
+  Widget _build(int bmi) {
     return SingleChildScrollView(
       child: Padding(
         padding: EdgeInsets.all(20),
@@ -58,13 +57,13 @@ class _bmiGetRangeState extends State<bmiGetRange> {
               ),
             ),
             SizedBox(height: 25),
-            bmiField(
+            BmiField(
               controller: _bmi,
               label: 'Enter the BMI',
               hint: 'Enter or paste the number',
             ),
             SizedBox(height: 15),
-            bmiSubmitButton(
+            BmiSubmitButton(
               submit: categorise,
               text: 'Categorise',
             ),

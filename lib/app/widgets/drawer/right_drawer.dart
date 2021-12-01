@@ -3,7 +3,7 @@ import 'package:bmicalculator/app/pages/get_range.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 
-class rightDrawer extends StatelessWidget {
+class RightDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -41,7 +41,7 @@ class rightDrawer extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   fullscreenDialog: true,
-                  builder: (context) => bmiCalculate(),
+                  builder: (context) => BmiCalculate(),
                 ),
               );
             },
@@ -53,7 +53,7 @@ class rightDrawer extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   fullscreenDialog: true,
-                  builder: (context) => bmiGetRange(),
+                  builder: (context) => BmiGetRange(),
                 ),
               );
             },

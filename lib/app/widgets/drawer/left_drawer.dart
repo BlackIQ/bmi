@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 
-class leftDrawer extends StatelessWidget {
+class LeftDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(

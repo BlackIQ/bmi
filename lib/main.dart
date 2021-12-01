@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'BMI Calculator',
-      home: bmiCalculator(),
+      home: BmiCalculator(),
     );
   }
 }

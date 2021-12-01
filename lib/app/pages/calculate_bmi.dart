@@ -3,12 +3,12 @@ import 'package:bmicalculator/app/widgets/field/field.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class bmiCalculate extends StatefulWidget {
+class BmiCalculate extends StatefulWidget {
   @override
-  _bmiCalculateState createState() => _bmiCalculateState();
+  _BmiCalculateState createState() => _BmiCalculateState();
 }
 
-class _bmiCalculateState extends State<bmiCalculate> {
+class _BmiCalculateState extends State<BmiCalculate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,19 +63,19 @@ class _bmiCalculateState extends State<bmiCalculate> {
               ),
             ),
             SizedBox(height: 25),
-            bmiField(
+            BmiField(
               controller: _height,
               label: 'Enter your height',
               hint: 'Value should be in Meter',
             ),
             SizedBox(height: 15),
-            bmiField(
+            BmiField(
               controller: _weight,
               label: 'Enter your weight',
               hint: 'Value should be in Kilogram',
             ),
             SizedBox(height: 15),
-            bmiSubmitButton(
+            BmiSubmitButton(
               submit: calculate,
               text: 'Calculate',
             ),
@@ -86,7 +86,7 @@ class _bmiCalculateState extends State<bmiCalculate> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Your BMI is ${bmiCalculated}.',
+                          'Your BMI is $bmiCalculated.',
                           style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold,
