@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ir.blackiq.bmi.bmicalculator">
-   <application
-        android:label="bmicalculator"
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:label="BMI Calculator"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
