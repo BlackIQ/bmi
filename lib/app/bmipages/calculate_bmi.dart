@@ -1,4 +1,4 @@
-import 'package:bmicalculator/app/pages/bmipages/analyzer.dart';
+import 'package:bmicalculator/app/bmipages/analyzer.dart';
 import 'package:bmicalculator/app/widgets/button/button.dart';
 import 'package:bmicalculator/app/widgets/field/field.dart';
 import 'package:flutter/material.dart';
