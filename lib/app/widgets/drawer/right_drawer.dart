@@ -1,3 +1,4 @@
+import 'package:bmicalculator/app/pages/calculate_bmi.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +36,14 @@ class rightDrawer extends StatelessWidget {
           DrawerItemWidget(
             text: 'Calculator BMI',
             icon: Icons.equalizer,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => bmiCalculate(),
+                ),
+              );
+            },
           ),
           DrawerItemWidget(
             text: 'Get category',
