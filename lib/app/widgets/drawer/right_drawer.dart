@@ -13,6 +13,12 @@ class RightDrawer extends StatelessWidget {
           DrawerHeader(
             decoration: BoxDecoration(
               color: Colors.indigo,
+              image: DecorationImage(
+                image: NetworkImage(
+                  'https://wallpapercave.com/wp/wp1828770.jpg',
+                ),
+                fit: BoxFit.cover,
+              ),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,6 +28,7 @@ class RightDrawer extends StatelessWidget {
                   'Calculate or Analyze BMI',
                   style: TextStyle(
                     color: Colors.white,
+                    fontWeight: FontWeight.bold,
                     fontSize: 25,
                   ),
                 ),

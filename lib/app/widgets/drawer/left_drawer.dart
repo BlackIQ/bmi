@@ -11,6 +11,12 @@ class LeftDrawer extends StatelessWidget {
           DrawerHeader(
             decoration: BoxDecoration(
               color: Colors.indigo,
+              image: DecorationImage(
+                image: NetworkImage(
+                  'https://wallpapercave.com/wp/wp2219707.jpg',
+                ),
+                fit: BoxFit.cover,
+              ),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
