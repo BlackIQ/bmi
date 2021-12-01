@@ -1,4 +1,5 @@
-import 'package:bmicalculator/app/widgets/drawer/drawer.dart';
+import 'package:bmicalculator/app/widgets/drawer/left_drawer.dart';
+import 'package:bmicalculator/app/widgets/drawer/right_drawer.dart';
 import 'package:flutter/material.dart';
 
 class bmiCalculator extends StatefulWidget {
@@ -15,7 +16,8 @@ class _bmiCalculatorState extends State<bmiCalculator> {
         centerTitle: true,
         elevation: 0,
       ),
-      drawer: bmiDrawer(),
+      drawer: leftDrawer(),
+      endDrawer: rightDrawer(),
       body: _build(),
     );
   }

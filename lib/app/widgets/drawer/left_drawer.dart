@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 
-class bmiDrawer extends StatelessWidget {
+class leftDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -33,6 +33,16 @@ class bmiDrawer extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          DrawerItemWidget(
+            text: 'What is BMI',
+            icon: Icons.question_answer,
+            onTap: () {},
+          ),
+          DrawerItemWidget(
+            text: 'About app',
+            icon: Icons.info_outline,
+            onTap: () {},
           ),
           DrawerItemWidget(
             text: 'Exit',
