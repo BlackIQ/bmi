@@ -19,7 +19,7 @@ class RightDrawer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Calculate or get status',
+                  'Calculate or Analyze BMI',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 25,
