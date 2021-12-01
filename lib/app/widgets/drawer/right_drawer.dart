@@ -1,0 +1,49 @@
+import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
+import 'package:flutter/material.dart';
+
+class rightDrawer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        children: <Widget>[
+          DrawerHeader(
+            decoration: BoxDecoration(
+              color: Colors.indigo,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Calculate or get status',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25,
+                  ),
+                ),
+                Text(
+                  'Here you can calculate or give the BMI to see status',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 15,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          DrawerItemWidget(
+            text: 'Calculator BMI',
+            icon: Icons.equalizer,
+            onTap: () {},
+          ),
+          DrawerItemWidget(
+            text: 'Get category',
+            icon: Icons.filter_list,
+            onTap: () {},
+          ),
+        ],
+      ),
+    );
+  }
+}
