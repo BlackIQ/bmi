@@ -1,5 +1,6 @@
-import 'package:bmicalculator/app/pages/calculate_bmi.dart';
-import 'package:bmicalculator/app/pages/get_range.dart';
+import 'package:bmicalculator/app/bmipages/calculate_bmi.dart';
+import 'package:bmicalculator/app/bmipages/analyzer.dart';
+import 'package:bmicalculator/app/bmipages/categorise.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 
@@ -53,7 +54,7 @@ class RightDrawer extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   fullscreenDialog: true,
-                  builder: (context) => BmiGetRange(),
+                  builder: (context) => Categorise(),
                 ),
               );
             },
