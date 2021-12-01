@@ -1,42 +1,42 @@
+import 'package:bmicalculator/app/bmipages/analyzer.dart';
 import 'package:bmicalculator/app/widgets/button/button.dart';
 import 'package:bmicalculator/app/widgets/field/field.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BmiGetRange extends StatefulWidget {
-  BmiGetRange({@required this.bmi});
-  final bmi;
-
+class Categorise extends StatefulWidget {
   @override
-  _BmiGetRangeState createState() => _BmiGetRangeState();
+  _CategoriseState createState() => _CategoriseState();
 }
 
-class _BmiGetRangeState extends State<BmiGetRange> {
+class _CategoriseState extends State<Categorise> {
   @override
   Widget build(BuildContext context) {
-    final bmi = widget.bmi;
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Calculate your BMI',
+          'Analyse the BMI',
           style: GoogleFonts.nunito(),
         ),
         centerTitle: true,
         elevation: 0,
       ),
-      body: _build(bmi),
+      body: _build(),
     );
   }
 
   final TextEditingController _bmi = TextEditingController();
 
-  void categorise() {
-    setState(() {
-      _bmi.clear();
-    });
+  void start_analyse() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        // fullscreenDialog: true,
+        builder: (context) => BmiGetRange(bmi: _bmi.text),
+      ),
+    );
   }
 
-  Widget _build(int bmi) {
+  Widget _build() {
     return SingleChildScrollView(
       child: Padding(
         padding: EdgeInsets.all(20),
@@ -44,14 +44,14 @@ class _BmiGetRangeState extends State<BmiGetRange> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Text(
-              'Enter the BMI to set the category',
+              'BMI calculator',
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              "A common use of the BMI is to assess how far an individual's body weight departs from what is normal or desirable for a person's height. The weight excess or deficiency may, in part, be accounted for by body fat (adipose tissue) although other factors such as muscularity also affect BMI significantly (see discussion below and overweight).[10]",
+              'Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2, resulting from mass in kilograms and height in metres.',
               style: TextStyle(
                 fontSize: 15,
               ),
@@ -60,12 +60,12 @@ class _BmiGetRangeState extends State<BmiGetRange> {
             BmiField(
               controller: _bmi,
               label: 'Enter the BMI',
-              hint: 'Enter or paste the number',
+              hint: 'Value should be integer (15) or double (15.6)',
             ),
             SizedBox(height: 15),
             BmiSubmitButton(
-              submit: categorise,
-              text: 'Categorise',
+              submit: start_analyse,
+              text: 'Analyse',
             ),
           ],
         ),

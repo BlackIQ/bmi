@@ -1,3 +1,4 @@
+import 'package:bmicalculator/app/pages/bmipages/analyzer.dart';
 import 'package:bmicalculator/app/widgets/button/button.dart';
 import 'package:bmicalculator/app/widgets/field/field.dart';
 import 'package:flutter/material.dart';
@@ -31,12 +32,12 @@ class _BmiCalculateState extends State<BmiCalculate> {
   String bmiCalculated = '';
 
   void calculate() {
-    var x = int.parse(_height.text);
-    var y = int.parse(_weight.text);
-    var z = x * y;
+    var height = int.parse(_height.text);
+    var weight = int.parse(_weight.text);
+    var bmi = (weight / (height * height)) * 10000;
     setState(() {
       calculated = true;
-      bmiCalculated = z.toString();
+      bmiCalculated = bmi.toString();
       _height.clear();
       _weight.clear();
     });
@@ -99,6 +100,23 @@ class _BmiCalculateState extends State<BmiCalculate> {
                             fontSize: 17,
                             color: Colors.indigo,
                           ),
+                        ),
+                        SizedBox(height: 25),
+                        ElevatedButton(
+                          child: Text(
+                            'Go to analyse my BMI',
+                            style: TextStyle(
+                              fontSize: 15,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                // fullscreenDialog: true,
+                                builder: (context) => BmiGetRange(bmi: bmiCalculated),
+                              ),
+                            );
+                          },
                         ),
                       ],
                     ),
