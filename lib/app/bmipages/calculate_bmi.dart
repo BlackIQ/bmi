@@ -30,14 +30,17 @@ class _BmiCalculateState extends State<BmiCalculate> {
 
   bool calculated = false;
   String bmiCalculated = '';
+  String newNumber = '';
 
   void calculate() {
     var height = int.parse(_height.text);
     var weight = int.parse(_weight.text);
     var bmi = (weight / (height * height)) * 10000;
     setState(() {
+      int intBmi = bmi.toInt();
       calculated = true;
-      bmiCalculated = bmi.toString();
+      bmiCalculated = intBmi.toString();
+      newNumber = (intBmi + 1).toString();
       _height.clear();
       _weight.clear();
     });
@@ -58,7 +61,7 @@ class _BmiCalculateState extends State<BmiCalculate> {
               ),
             ),
             Text(
-              'Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2, resulting from mass in kilograms and height in metres.',
+              'The main feature of of this application is calculating your Body Mass Index. All parameters are your weight and height. Enter them and tap om calculate. After you cam analyse it too.',
               style: TextStyle(
                 fontSize: 15,
               ),
@@ -87,48 +90,28 @@ class _BmiCalculateState extends State<BmiCalculate> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Your BMI is $bmiCalculated.',
+                          'Your BMI is between $bmiCalculated and $newNumber.',
                           style: TextStyle(
-                            fontSize: 25,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Colors.indigo,
                           ),
                         ),
-                        Text(
-                          'Open drawer and choose Range BMI. Enter your BMI to analyse the BMI.',
-                          style: TextStyle(
-                            fontSize: 17,
-                            color: Colors.indigo,
-                          ),
-                        ),
-                        SizedBox(height: 25),
-                        ElevatedButton(
-                          child: Text(
-                            'Go to analyse my BMI',
-                            style: TextStyle(
-                              fontSize: 15,
-                            ),
-                          ),
-                          onPressed: () {
+                        SizedBox(height: 10),
+                        BmiSubmitButton(
+                          submit: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                // fullscreenDialog: true,
                                 builder: (context) => BmiGetRange(bmi: bmiCalculated),
                               ),
                             );
                           },
+                          text: 'Go to analyse my BMI'
                         ),
                       ],
                     ),
                   )
-                : Text(
-                    'To see your BMI, fill these blanks.',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                      color: Colors.red,
-                    ),
-                  )
+                : SizedBox(height: 1),
           ],
         ),
       ),
