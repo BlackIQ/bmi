@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:bmicalculator/app/pages/about_bmi.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +43,13 @@ class LeftDrawer extends StatelessWidget {
           DrawerItemWidget(
             text: 'What is BMI',
             icon: Icons.question_answer,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => AboutBmi(),
+                ),
+              );
+            },
           ),
           DrawerItemWidget(
             text: 'About app',
