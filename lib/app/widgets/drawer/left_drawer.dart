@@ -15,9 +15,7 @@ class LeftDrawer extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.indigo,
               image: DecorationImage(
-                image: NetworkImage(
-                  'https://wallpapercave.com/wp/wp2219707.jpg',
-                ),
+                image: AssetImage("assets/left.jpg"),
                 fit: BoxFit.cover,
               ),
             ),

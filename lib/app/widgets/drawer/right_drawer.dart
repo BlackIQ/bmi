@@ -13,9 +13,7 @@ class RightDrawer extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.indigo,
               image: DecorationImage(
-                image: NetworkImage(
-                  'https://wallpapercave.com/wp/wp1828770.jpg',
-                ),
+                image: AssetImage("assets/right.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
