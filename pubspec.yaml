@@ -24,6 +24,8 @@ flutter:
 
   assets:
     - assets/icon/bmi.jpg
+    - assets/left.jpg
+    - assets/right.jpg
 
 flutter_icons:
   android: true
