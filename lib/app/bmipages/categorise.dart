@@ -27,7 +27,7 @@ class _CategoriseState extends State<Categorise> {
 
   final TextEditingController _bmi = TextEditingController();
 
-  void start_analyse() {
+  void startAnalyse() {
     Navigator.of(context).push(
       MaterialPageRoute(
         // fullscreenDialog: true,
@@ -51,7 +51,7 @@ class _CategoriseState extends State<Categorise> {
               ),
             ),
             Text(
-              'Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2, resulting from mass in kilograms and height in metres.',
+              'Here is the place that you can enter BMI and see you are in with category.',
               style: TextStyle(
                 fontSize: 15,
               ),
@@ -64,7 +64,7 @@ class _CategoriseState extends State<Categorise> {
             ),
             SizedBox(height: 15),
             BmiSubmitButton(
-              submit: start_analyse,
+              submit: startAnalyse,
               text: 'Analyse',
             ),
           ],
