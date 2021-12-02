@@ -31,10 +31,13 @@ class _BmiGetRangeState extends State<BmiGetRange> {
       child: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          // crossAxisAlignment: CrossAxisAlignment.center,
+          // mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              bmi.toString(),
+            Center(
+              child: Text(
+                'BMI : $bmi',
+              ),
             ),
           ],
         ),
