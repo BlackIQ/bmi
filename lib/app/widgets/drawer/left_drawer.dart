@@ -1,5 +1,7 @@
 import 'dart:io';
+import 'package:bmicalculator/app/pages/about_app.dart';
 import 'package:bmicalculator/app/pages/about_bmi.dart';
+import 'package:bmicalculator/app/pages/about_development.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 
@@ -54,7 +56,24 @@ class LeftDrawer extends StatelessWidget {
           DrawerItemWidget(
             text: 'About app',
             icon: Icons.info_outline,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => AboutApp(),
+                ),
+              );
+            },
+          ),
+          DrawerItemWidget(
+            text: 'Development',
+            icon: Icons.laptop_mac,
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => AboutDev(),
+                ),
+              );
+            },
           ),
           DrawerItemWidget(
             text: 'Exit',
