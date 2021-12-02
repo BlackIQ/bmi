@@ -1,5 +1,4 @@
 import 'package:bmicalculator/app/bmipages/calculate_bmi.dart';
-import 'package:bmicalculator/app/bmipages/analyzer.dart';
 import 'package:bmicalculator/app/bmipages/categorise.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
