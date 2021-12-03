@@ -27,6 +27,7 @@ flutter:
     - assets/left.jpg
     - assets/right.jpg
     - assets/underweight.jpg
+    - assets/healthy.jpg
     - assets/overweight.jpg
     - assets/obesity.jpg
 
