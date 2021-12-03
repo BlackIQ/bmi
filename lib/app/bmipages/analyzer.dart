@@ -27,6 +27,7 @@ class _BmiGetRangeState extends State<BmiGetRange> {
         centerTitle: true,
         elevation: 0,
       ),
+      backgroundColor: Colors.white,
       body: _build(bmi),
     );
   }
