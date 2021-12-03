@@ -21,6 +21,8 @@ class UnderWeight extends StatelessWidget {
             SizedBox(height: 10),
             Divider(color: Colors.indigo),
             SizedBox(height: 10),
+            Image.asset('assets/underweight.jpg'),
+            SizedBox(height: 10),
             TitleText(
               text: "How do I know if I’m underweight?",
             ),
