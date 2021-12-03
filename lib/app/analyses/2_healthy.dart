@@ -21,7 +21,7 @@ class Healthy extends StatelessWidget {
             SizedBox(height: 10),
             Divider(color: Colors.indigo),
             SizedBox(height: 10),
-            Image.network("https://images.ctfassets.net/plyq12u1bv8a/1C7j6hSnbCoKW0c4KqsQ0k/98a1e434fd9d171875f89610f5a52da7/BMI_Header_New.jpg"),
+            Image.asset('assets/healthy.jpg'),
             SizedBox(height: 10),
             ParagraphText(
               text: "People come in all shapes and sizes. While it’s good to embrace our differences, staying healthy is important for everyone. One key indicator of health is your body fat percentage.",
