@@ -1,7 +1,9 @@
+import 'package:bmicalculator/app/widgets/button/button.dart';
 import 'package:bmicalculator/app/widgets/text/p.dart';
 import 'package:bmicalculator/app/widgets/text/title.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Development extends StatelessWidget {
   @override
@@ -95,8 +97,25 @@ class Development extends StatelessWidget {
               text: 'Hi, I am Amirhossein Mohamamdi. Creator of this applicatin and some other apps. You can contact me front this link below.',
             ),
             SizedBox(height: 5),
-            ParagraphText(
-              text: 'https://amirhossein.info',
+            BmiSubmitButton(
+              submit: () async {
+                await launch('https://amirhossein.info');
+              },
+              text: 'Open amirhossein.info',
+            ),
+            SizedBox(height: 5),
+            BmiSubmitButton(
+              submit: () async {
+                await launch('mailto:amirhosseinmohammadi1380@yahoo.com');
+              },
+              text: 'Email amirhosseinmohammadi1380@yahoo.com',
+            ),
+            SizedBox(height: 5),
+            BmiSubmitButton(
+              submit: () async {
+                await launch('tel:+989014784362');
+              },
+              text: 'Call +98 901 478 4362',
             ),
           ],
         ),
