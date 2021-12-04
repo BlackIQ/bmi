@@ -41,8 +41,6 @@ class _BmiCalculateState extends State<BmiCalculate> {
       calculated = true;
       bmiCalculated = intBmi.toString();
       newNumber = (intBmi + 1).toString();
-      _height.clear();
-      _weight.clear();
     });
   }
 
@@ -89,6 +87,14 @@ class _BmiCalculateState extends State<BmiCalculate> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
+                        Text(
+                          'Height: ${_height.text}\nWeight: ${_weight.text}',
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.indigo,
+                          ),
+                        ),
+                        Divider(color: Colors.indigo),
                         Text(
                           'Your BMI is between $bmiCalculated and $newNumber.',
                           style: TextStyle(
