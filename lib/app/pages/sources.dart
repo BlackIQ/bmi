@@ -19,6 +19,69 @@ class Sources extends StatelessWidget {
     );
   }
 
+  List<Map> links = [
+    {
+      'site': 'Google',
+      'about': 'Search',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Github',
+      'about': 'Share code',
+      'url': 'https://github.com',
+    },
+    {
+      'site': 'Facebook',
+      'about': 'Social',
+      'url': 'https://facebook.com',
+    },
+    {
+      'site': 'Google',
+      'about': 'Search',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Github',
+      'about': 'Share code',
+      'url': 'https://github.com',
+    },
+    {
+      'site': 'Facebook',
+      'about': 'Social',
+      'url': 'https://facebook.com',
+    },
+    {
+      'site': 'Google',
+      'about': 'Search',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Github',
+      'about': 'Share code',
+      'url': 'https://github.com',
+    },
+    {
+      'site': 'Facebook',
+      'about': 'Social',
+      'url': 'https://facebook.com',
+    },
+    {
+      'site': 'Google',
+      'about': 'Search',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Github',
+      'about': 'Share code',
+      'url': 'https://github.com',
+    },
+    {
+      'site': 'Facebook',
+      'about': 'Social',
+      'url': 'https://facebook.com',
+    },
+  ];
+
   Widget _page() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
