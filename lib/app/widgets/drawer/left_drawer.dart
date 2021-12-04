@@ -2,6 +2,8 @@ import 'dart:io';
 import 'package:bmicalculator/app/pages/about_app.dart';
 import 'package:bmicalculator/app/pages/about_bmi.dart';
 import 'package:bmicalculator/app/pages/about_development.dart';
+import 'package:bmicalculator/app/pages/contact.dart';
+import 'package:bmicalculator/app/pages/sources.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 
@@ -24,14 +26,15 @@ class LeftDrawer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'BMI Calculator',
+                  'BMI Analyser',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 25,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
-                  'Body Mass Index',
+                  'Version 1.0.0',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
@@ -64,11 +67,33 @@ class LeftDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'Development',
-            icon: Icons.laptop_mac,
+            icon: Icons.devices,
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => AboutDev(),
+                  builder: (context) => Development(),
+                ),
+              );
+            },
+          ),
+          DrawerItemWidget(
+            text: 'Sources',
+            icon: Icons.format_align_justify,
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => Sources(),
+                ),
+              );
+            },
+          ),
+          DrawerItemWidget(
+            text: 'Contact us',
+            icon: Icons.email,
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => Contact(),
                 ),
               );
             },
