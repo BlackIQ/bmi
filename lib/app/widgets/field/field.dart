@@ -15,6 +15,7 @@ class BmiField extends StatelessWidget {
         labelText: label,
         hintText: hint,
       ),
+      keyboardType: TextInputType.number,
     );
   }
 }
