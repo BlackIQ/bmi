@@ -24,7 +24,7 @@ class Obesity extends StatelessWidget {
             Image.asset('assets/obesity.jpg'),
             SizedBox(height: 10),
             TitleText(
-              text: "Overview of what is overweight",
+              text: "Overview of what is Obesity",
             ),
             SizedBox(height: 10),
             ParagraphText(
