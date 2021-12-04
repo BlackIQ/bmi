@@ -34,9 +34,10 @@ class _BmiCalculatorState extends State<BmiCalculator> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Welcome to BMI Calculator',
+              'Welcome to Body analyser',
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(height: 25),
