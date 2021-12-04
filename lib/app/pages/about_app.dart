@@ -1,3 +1,4 @@
+import 'package:bmicalculator/app/widgets/button/button.dart';
 import 'package:bmicalculator/app/widgets/text/p.dart';
 import 'package:bmicalculator/app/widgets/text/title.dart';
 import 'package:flutter/material.dart';
@@ -9,17 +10,17 @@ class AboutApp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'About app',
+          'About App',
           style: GoogleFonts.nunito(),
         ),
         centerTitle: true,
         elevation: 0,
       ),
-      body: _page(),
+      body: _page(context),
     );
   }
 
-  Widget _page() {
+  Widget _page(context) {
     return SingleChildScrollView(
       child: Padding(
         padding: EdgeInsets.all(15),
@@ -27,12 +28,33 @@ class AboutApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             TitleText(
-              text: 'Body Mass Index',
+              text: 'BMI analyser',
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text:
-              'Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2, resulting from mass in kilograms and height in metres.',
+              text: 'BMI analyser is a complete app to give you the range of your BMI and analyse it and tell you whitch category are your exactly in.',
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: 'We have many articles about health that you can get them every morning from the main page.',
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: 'One other benefits of this application is that the application is cross platform. If your have an iOS device you can install this application in your iPhone too.',
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: 'To see licenses, version and other things, click in the button below.',
+            ),
+            SizedBox(height: 10),
+            BmiSubmitButton(
+              submit: () => showAboutDialog(
+                context: context,
+                applicationLegalese: 'BMI analyser, whats out your health',
+                applicationName: 'BMI Analyser',
+                applicationVersion: '1.0.0',
+              ),
+              text: 'More details',
             ),
           ],
         ),
