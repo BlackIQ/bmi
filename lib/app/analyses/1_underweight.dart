@@ -183,7 +183,6 @@ class UnderWeight extends StatelessWidget {
               text:
               '- Weight Management — Tools and resources from Nutrition.gov.',
             ),
-            SizedBox(height: 10),
           ],
         ),
       ),

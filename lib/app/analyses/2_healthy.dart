@@ -94,7 +94,6 @@ class Healthy extends StatelessWidget {
             ParagraphText(
               text: "If your BMI score is outside of a healthy percentile, it’s time to call a professional. Consult your primary care doctor for advice on ways you can achieve a healthy balance of body fat. If needed, you may need to see a dietician to achieve your health goals.",
             ),
-            SizedBox(height: 10),
           ],
         ),
       ),
