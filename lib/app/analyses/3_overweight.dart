@@ -24,87 +24,156 @@ class OverWight extends StatelessWidget {
             Image.asset('assets/overweight.jpg'),
             SizedBox(height: 10),
             TitleText(
-              text: "Overview of what is overweight",
+              text: "what exactly is overweight",
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text: "Obesity is a medical condition in which excess body fat has accumulated to an extent that it may have a negative effect on health. People are generally considered obese when their body mass index (BMI), a measurement obtained by dividing a person's weight by the square of the person's height—despite known allometric inaccuracies[a]—is over 30 kg/m2; the range 25–30 kg/m2 is defined as overweight. Some East Asian countries use lower values.",
+              text: "Being overweight or fat is having more body fat than is optimally healthy. Being overweight is especially common where food supplies are plentiful and lifestyles are sedentary.",
             ),
             SizedBox(height: 5),
             ParagraphText(
-              text: "Obesity is correlated with various diseases and conditions, particularly cardiovascular diseases, type 2 diabetes, obstructive sleep apnea, certain types of cancer, and osteoarthritis. High BMI is a marker of risk, but not proven to be a direct cause, for diseases caused by diet, physical activity, and environmental factors. A reciprocal link has been found between obesity and depression, with obesity increasing the risk of clinical depression and also depression leading to a higher chance of developing obesity.",
+              text: "As of 2003, excess weight reached epidemic proportions globally, with more than 1 billion adults being either overweight or obese. In 2013, this increased to more than 2 billion. Increases have been observed across all age groups.",
             ),
             SizedBox(height: 5),
             ParagraphText(
-              text: "Obesity has individual, socioeconomic, and environmental causes, including diet, physical activity, automation, urbanization, genetic susceptibility, medications, mental disorders, economic policies, endocrine disorders, and exposure to endocrine-disrupting chemicals. Epidemiologic studies of overweight and obesity in children and adults covering 195 countries have shown that the prevalence of obesity has steadily increased in most countries, doubling in 73 countries over the 25 years from 1980 to 2015. As of 2015, the United States and China had the largest numbers of obese adults, and China and India had the largest numbers of obese children. By 2018, 42% of Americans were obese.",
-            ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: "While a majority of obese individuals at any given time are attempting to lose weight and are often successful, research shows that maintaining that weight loss over the long term proves to be rare. The reasons for weight cycling are not fully understood but may include decreased energy expenditure combined with increased biological urge to eat during and after caloric restriction. More studies are needed to determine if weight cycling and yo-yo dieting contribute to inflammation and disease risk in obese individuals.",
-            ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: 'Obesity prevention requires a complex approach, including interventions at community, family, and individual levels. Changes to diet and exercising are the main treatments recommended by health professionals. Diet quality can be improved by reducing the consumption of energy-dense foods, such as those high in fat or sugars, and by increasing the intake of dietary fiber. However, large-scale analyses have found an inverse relationship between energy density and energy cost of foods in developed nations. Low-income populations are more likely to live in neighborhoods that are considered "food deserts" or "food swamps" where nutritional groceries are less available. Medications can be used, along with a suitable diet, to reduce appetite or decrease fat absorption If diet, exercise, and medication are not effective, a gastric balloon or surgery may be performed to reduce stomach volume or length of the intestines, leading to feeling full earlier or a reduced ability to absorb nutrients from food.',
-            ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: "Obesity is a leading preventable cause of death worldwide, with increasing rates in adults and children. In 2015, 600 million adults (12%) and 100 million children were obese in 195 countries. Obesity is more common in women than in men. Authorities view it as one of the most serious public health problems of the 21st century. Obesity is stigmatized in much of the modern world (particularly in the Western world), though it was seen as a symbol of wealth and fertility at other times in history and still is in some parts of the world. In 2013, several medical societies, including the American Medical Association and the American Heart Association, classified obesity as a disease.",
+              text: "A healthy body requires a minimum amount of fat for proper functioning of the hormonal, reproductive, and immune systems, as thermal insulation, as shock absorption for sensitive areas, and as energy for future use; however, the accumulation of too much storage fat can impair movement, flexibility, and alter the appearance of the body.",
             ),
             SizedBox(height: 15),
             TitleText(
               text:
-              "Effects on health",
+              "Classification",
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text: "Excessive body weight is associated with various diseases and conditions, particularly cardiovascular diseases, diabetes mellitus type 2, obstructive sleep apnea, certain types of cancer, osteoarthritis, and asthma. As a result, obesity has been found to reduce life expectancy.",
-            ),
-            SizedBox(height: 5),
-            TitleText(
-              text: "- Mortality",
-            ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: 'Obesity is one of the leading preventable causes of death worldwide. A number of reviews have found that mortality risk is lowest at a BMI of 20–25 kg/m2 in non-smokers and at 24–27 kg/m2 in current smokers, with risk increasing along with changes in either direction. This appears to apply in at least four continents. In contrast, a 2013 review found that grade 1 obesity (BMI 30–34.9) was not associated with higher mortality than normal weight, and that overweight (BMI 25–29.9) was associated with "lower" mortality than was normal weight (BMI 18.5–24.9). Other evidence suggests that the association of BMI and waist circumference with mortality is U- or J-shaped, while the association between waist-to-hip ratio and waist-to-height ratio with mortality is more positive. In Asians the risk of negative health effects begins to increase between 22–25 kg/m2. A BMI above 32 kg/m2 has been associated with a doubled mortality rate among women over a 16-year period. In the United States, obesity is estimated to cause 111,909 to 365,000 deaths per year, while 1 million (7.7%) of deaths in Europe are attributed to excess weight. On average, obesity reduces life expectancy by six to seven years, a BMI of 30–35 kg/m2 reduces life expectancy by two to four years, while severe obesity (BMI ≥ 40 kg/m2) reduces life expectancy by ten years.',
-            ),
-            SizedBox(height: 5),
-            TitleText(
-              text: "- Morbidity",
-            ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: "Obesity increases the risk of many physical and mental conditions. These comorbidities are most commonly shown in metabolic syndrome, a combination of medical disorders which includes: diabetes mellitus type 2, high blood pressure, high blood cholesterol, and high triglyceride levels. A study from the RAK Hospital found that obese people are at a greater risk of developing long COVID. The CDC has found that obesity is the single strongest risk factor for severe COVID-19 illness.",
-            ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: "Complications are either directly caused by obesity or indirectly related through mechanisms sharing a common cause such as a poor diet or a sedentary lifestyle. The strength of the link between obesity and specific conditions varies. One of the strongest is the link with type 2 diabetes. Excess body fat underlies 64% of cases of diabetes in men and 77% of cases in women.",
-            ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: "Health consequences fall into two broad categories: those attributable to the effects of increased fat mass (such as osteoarthritis, obstructive sleep apnea, social stigmatization) and those due to the increased number of fat cells (diabetes, cancer, cardiovascular disease, non-alcoholic fatty liver disease). Increases in body fat alter the body's response to insulin, potentially leading to insulin resistance. Increased fat also creates a proinflammatory state, and a prothrombotic state.",
-            ),
-            SizedBox(height: 5),
-            TitleText(
-              text: "- Survival paradox",
-            ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: "Although the negative health consequences of obesity in the general population are well supported by the available evidence, health outcomes in certain subgroups seem to be improved at an increased BMI, a phenomenon known as the obesity survival paradox. The paradox was first described in 1999 in overweight and obese people undergoing hemodialysis, and has subsequently been found in those with heart failure and peripheral artery disease (PAD).",
-            ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: "In people with heart failure, those with a BMI between 30.0 and 34.9 had lower mortality than those with a normal weight. This has been attributed to the fact that people often lose weight as they become progressively more ill. Similar findings have been made in other types of heart disease. People with class I obesity and heart disease do not have greater rates of further heart problems than people of normal weight who also have heart disease. In people with greater degrees of obesity, however, the risk of further cardiovascular events is increased. Even after cardiac bypass surgery, no increase in mortality is seen in the overweight and obese. One study found that the improved survival could be explained by the more aggressive treatment obese people receive after a cardiac event. Another study found that if one takes into account chronic obstructive pulmonary disease (COPD) in those with PAD, the benefit of obesity no longer exists.",
+              text: "The degree to which a person is overweight is generally described by the body mass index (BMI). Overweight is defined as a BMI of 25 or more, thus it includes pre-obesity defined as a BMI between 25 and 29.9 and obesity as defined by a BMI of 30 or more.[4][5] Pre-obese and overweight however are often used interchangeably, thus giving overweight a common definition of a BMI of between 25 and 29.9. There are, however, several other common ways to measure the amount of adiposity or fat present in an individual's body.",
             ),
             SizedBox(height: 15),
             TitleText(
-              text: "How common is underweight?",
+              text: "Health effects",
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text:
-              "In the United States, about 2% of women have underweight.",
+              text: 'While the negative health outcomes associated with obesity are accepted within the medical community, the health implications of the overweight category are more controversial. The generally accepted view is that being overweight causes similar health problems to obesity, but to a lesser degree. A 2016 review estimated that the risk of death increases by seven percent among overweight people with a BMI of 25 to 27.5 and 20 percent among overweight people with a BMI of 27.5 to 30. The Framingham heart study found that being overweight at age 40 reduced life expectancy by three years. Being overweight also increases the risk of oligospermia and azoospermia in men.',
             ),
-            // SizedBox(height: 10),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: 'Katherine Flegal et al., however, found that the mortality rate for individuals who are classified as overweight (BMI 25 to 29.9) may actually be lower than for those with an "ideal" weight (BMI 18.5 to 24.9), noting that many studies show that the lowest mortality rate is at a BMI close to 25.',
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: 'Being overweight has been identified as a cause of cancer, and is projected to overtake smoking as the primary cause of cancer in developed countries as cases of smoking-related cancer dwindle.',
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: 'Psychological well-being is also at risk in the overweight individual due to social discrimination. However, children under the age of eight are normally not affected.',
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: 'Being overweight has been shown not to increase mortality[qualify evidence] in older people: in a study of 70 to 75-year old Australians, mortality was lowest for "overweight" individuals (BMI 25 to 29.9), while a study of Koreans found that, among those initially aged 65 or more, an increase in BMI to above 25 was not associated with increased risk of death.',
+            ),
+            SizedBox(height: 15),
+            TitleText(
+              text:
+              "Classification",
+            ),
+            SizedBox(height: 10),
+            ParagraphText(
+              text: "The degree to which a person is overweight is generally described by the body mass index (BMI). Overweight is defined as a BMI of 25 or more, thus it includes pre-obesity defined as a BMI between 25 and 29.9 and obesity as defined by a BMI of 30 or more.[4][5] Pre-obese and overweight however are often used interchangeably, thus giving overweight a common definition of a BMI of between 25 and 29.9. There are, however, several other common ways to measure the amount of adiposity or fat present in an individual's body.",
+            ),
+            SizedBox(height: 15),
+            TitleText(
+              text: "Cases",
+            ),
+            SizedBox(height: 10),
+            ParagraphText(
+              text: 'Being overweight is generally caused by the intake of more calories (by eating) than are expended by the body (by exercise and everyday activity). Factors that may contribute to this imbalance include:',
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: '- Alcoholism',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Alcoholism',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Genetic predisposition',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Hormonal imbalances (e.g. hypothyroidism)',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Insufficient or poor-quality sleep',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Limited physical exercise and a sedentary lifestyle',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Poor nutrition',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Metabolic disorders, which could be caused by repeated attempts to lose weight by weight cycling',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Overeating',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Psychotropic medication (e.g. olanzapine)',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+                text: '- Smoking cessation and other stimulant withdrawal',
+            ),
+            SizedBox(height: 2),
+            ParagraphText(
+              text: '- Stress',
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: 'People who have insulin dependent diabetes and chronically overdose insulin may gain weight, while people who already are overweight may develop insulin tolerance, and in the long run develop type II diabetes.',
+            ),
+            SizedBox(height: 15),
+            TitleText(
+              text:
+              "Treatment",
+            ),
+            SizedBox(height: 10),
+            ParagraphText(
+              text: "The usual treatments for overweight individuals is diet and physical exercise.",
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: "Dietitians generally recommend eating several balanced meals dispersed through the day, with a combination of progressive, primarily aerobic, physical exercise. In fact, some research found benefits from physical activity, diet and behaviour changes on BMI in children from 12 to 17 years old.",
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: "Because these general treatments help most case of obesity, they are common in all levels of overweight individuals.",
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: "Considering that most of the treatment strategies are directed to change lifestyle-related behaviours of individuals (namely in dietary and physical activity), the transtheoretical model (TTM) has been used as a framework to design weight management interventions. A systematic review assessed the effectiveness of dietary and physical activity interventions based on the TTM in producing sustainable (one year or longer) weight loss in overweight and obese adults. The included studies did not allow to produce conclusive evidence about the impact of the use of this model combined with these interventions on sustainable weight loss. Nevertheless, very low quality scientific evidence suggests that this approach may lead to improvements in physical activity and dietary habits, namely increased in both exercise duration and frequency, and fruits and vegetables consumption, alongside with reduced dietary fat intake.",
+            ),
+            SizedBox(height: 15),
+            TitleText(
+              text:
+              "Epidemiology",
+            ),
+            SizedBox(height: 10),
+            ParagraphText(
+              text: "The World Health Organization (WHO) estimated that nearly 2 billion adults worldwide, aged 18 years and older, were overweight in 2016.",
+            ),
+            SizedBox(height: 5),
+            ParagraphText(
+              text: "As much as 71.6% of the United States' adult population aged 20 and over is considered either overweight or obese, and this percentage has increased over the last four decades.",
+            ),
           ],
         ),
       ),
