@@ -9,7 +9,7 @@ class Contact extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Development',
+          'Contact',
           style: GoogleFonts.nunito(),
         ),
         centerTitle: true,
