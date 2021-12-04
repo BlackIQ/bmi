@@ -76,16 +76,22 @@ class Development extends StatelessWidget {
               text: 'You can see the code in Github on this link:',
             ),
             SizedBox(height: 5),
-            ParagraphText(
-              text: 'https://github.com/BlackIQ/bmi',
+            BmiSubmitButton(
+              submit: () async {
+                await launch('https://github.com/BlackIQ/bmi');
+              },
+              text: 'Open Github',
             ),
             SizedBox(height: 5),
             ParagraphText(
               text: 'Again you can download last release from the site too.',
             ),
             SizedBox(height: 5),
-            ParagraphText(
-              text: 'https://bmi.blackiq.ir',
+            BmiSubmitButton(
+              submit: () async {
+                await launch('https://bmi.blackiq.ir');
+              },
+              text: 'Open bmi.blackiq.ir',
             ),
             SizedBox(height: 15),
             SizedBox(height: 15),
