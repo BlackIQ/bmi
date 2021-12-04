@@ -6,6 +6,7 @@ import 'package:bmicalculator/app/pages/contact.dart';
 import 'package:bmicalculator/app/pages/sources.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LeftDrawer extends StatelessWidget {
   @override
@@ -96,6 +97,13 @@ class LeftDrawer extends StatelessWidget {
                   builder: (context) => Contact(),
                 ),
               );
+            },
+          ),
+          DrawerItemWidget(
+            text: 'Open site',
+            icon: Icons.cloud,
+            onTap: () async {
+              await launch('https://bmi.blackiq.ir');
             },
           ),
           DrawerItemWidget(
