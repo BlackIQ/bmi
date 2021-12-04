@@ -1,7 +1,9 @@
+import 'package:bmicalculator/app/widgets/button/button.dart';
 import 'package:bmicalculator/app/widgets/text/p.dart';
 import 'package:bmicalculator/app/widgets/text/title.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Contact extends StatelessWidget {
   @override
@@ -34,12 +36,17 @@ class Contact extends StatelessWidget {
               text: 'From website or sending emails.',
             ),
             SizedBox(height: 10),
-            ParagraphText(
-              text: 'Website:\nhttps://bmi.blackiq.ir',
+            BmiSubmitButton(
+              submit: () async {
+                await launch('https://bmi.blackiq.ir');
+              },
+              text: 'Open bmi.blackiq.ir',
             ),
-            SizedBox(height: 5),
-            ParagraphText(
-              text: 'Email:\namirhosseinmohammadi1380@yahoo.com',
+            BmiSubmitButton(
+              submit: () async {
+                await launch('mailto:amirhosseinmohammadi1380@yahoo.com');
+              },
+              text: 'Email amirhosseinmohammadi1380@yahoo.com',
             ),
           ],
         ),
