@@ -2,6 +2,7 @@ import 'package:bmicalculator/app/widgets/text/p.dart';
 import 'package:bmicalculator/app/widgets/text/title.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Sources extends StatelessWidget {
   @override
@@ -113,9 +114,8 @@ class Sources extends StatelessWidget {
                 subtitle: Text(
                   links[index]['about'],
                 ),
-                onLongPress: () {
-                  // TODO: Using open broser lib to open url in long press
-                  print(links[index]['url']);
+                onLongPress: () async {
+                  await launch(links[index]['url']);
                 },
               );
             },
