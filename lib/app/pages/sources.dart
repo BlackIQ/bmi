@@ -19,6 +19,7 @@ class Sources extends StatelessWidget {
     );
   }
 
+  // TODO: Add all links
   List<Map> links = [
     {
       'site': 'Google',
@@ -106,12 +107,14 @@ class Sources extends StatelessWidget {
             itemBuilder: (context, index) {
               return ListTile(
                 title: Text(
+                  // TODO: Change color to indigo
                   links[index]['site'],
                 ),
                 subtitle: Text(
                   links[index]['about'],
                 ),
                 onLongPress: () {
+                  // TODO: Using open broser lib to open url in long press
                   print(links[index]['url']);
                 },
               );
