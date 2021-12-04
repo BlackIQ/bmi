@@ -20,67 +20,52 @@ class Sources extends StatelessWidget {
     );
   }
 
-  // TODO: Add all links
   List<Map> links = [
     {
-      'site': 'Google',
-      'about': 'Search',
-      'url': 'https://google.com',
+      'site': 'Wikipedia',
+      'about': 'Article about Body Mass Index',
+      'url': 'https://en.wikipedia.org/wiki/Body_mass_index',
     },
     {
-      'site': 'Github',
-      'about': 'Share code',
-      'url': 'https://github.com',
+      'site': 'Wikipedia',
+      'about': 'Article about overweight',
+      'url': 'https://en.wikipedia.org/wiki/Overweight',
+    },
+    // After
+    {
+      'site': 'Wikipedia',
+      'about': 'Article about Underweight',
+      'url': 'https://en.wikipedia.org/wiki/Underweight',
     },
     {
-      'site': 'Facebook',
-      'about': 'Social',
-      'url': 'https://facebook.com',
+      'site': 'Wikipedia',
+      'about': 'Article about Obesity',
+      'url': 'https://en.wikipedia.org/wiki/Obesity',
     },
     {
-      'site': 'Google',
-      'about': 'Search',
-      'url': 'https://google.com',
+      'site': 'Medical News Today',
+      'about': 'How much should I weigh for my height and age?',
+      'url': 'https://www.medicalnewstoday.com/articles/323446',
     },
     {
-      'site': 'Github',
-      'about': 'Share code',
-      'url': 'https://github.com',
+      'site': 'Centers for Disease Control and Prevention',
+      'about': 'Obesity and adults',
+      'url': 'https://www.cdc.gov/obesity/adult/defining.html',
     },
     {
-      'site': 'Facebook',
-      'about': 'Social',
-      'url': 'https://facebook.com',
+      'site': 'Mount Sinai',
+      'about': 'Overweight',
+      'url': 'https://www.mountsinai.org/health-library/symptoms/overweight',
     },
     {
-      'site': 'Google',
-      'about': 'Search',
-      'url': 'https://google.com',
+      'site': 'WHO',
+      'about': 'Obesity and overweight',
+      'url': 'https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight',
     },
     {
-      'site': 'Github',
-      'about': 'Share code',
-      'url': 'https://github.com',
-    },
-    {
-      'site': 'Facebook',
-      'about': 'Social',
-      'url': 'https://facebook.com',
-    },
-    {
-      'site': 'Google',
-      'about': 'Search',
-      'url': 'https://google.com',
-    },
-    {
-      'site': 'Github',
-      'about': 'Share code',
-      'url': 'https://github.com',
-    },
-    {
-      'site': 'Facebook',
-      'about': 'Social',
-      'url': 'https://facebook.com',
+      'site': 'NIDDK',
+      'about': 'Facts for Adult Overweight & Obesity',
+      'url': 'https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/definition-facts',
     },
   ];
 
@@ -110,6 +95,9 @@ class Sources extends StatelessWidget {
                 title: Text(
                   // TODO: Change color to indigo
                   links[index]['site'],
+                  style: TextStyle(
+                    color: Colors.indigo,
+                  ),
                 ),
                 subtitle: Text(
                   links[index]['about'],
@@ -122,53 +110,6 @@ class Sources extends StatelessWidget {
             separatorBuilder: (context, index) => Divider(color: Colors.indigo,),
           ),
         ),
-        // ParagraphText(
-        //   text: 'https://en.wikipedia.org/wiki/Body_mass_index',
-        // ),
-        // SizedBox(height: 5),
-        // ParagraphText(
-        //   text: 'https://en.wikipedia.org/wiki/Overweight',
-        // ),
-        // SizedBox(height: 5),
-        // ParagraphText(
-        //   text: 'https://en.wikipedia.org/wiki/Underweight',
-        // ),
-        // SizedBox(height: 5),
-        // ParagraphText(
-        //   text: 'https://en.wikipedia.org/wiki/Obesity',
-        // ),
-        // SizedBox(height: 5),
-        // ParagraphText(
-        //   text: 'https://www.medicalnewstoday.com/articles/323446',
-        // ),
-        // SizedBox(height: 5),
-        // ParagraphText(
-        //   text: 'https://www.cdc.gov/obesity/adult/defining.html',
-        // ),
-        // SizedBox(height: 5),
-        // ParagraphText(
-        //   text:
-        //       'https://www.mountsinai.org/health-library/symptoms/overweight',
-        // ),
-        // SizedBox(height: 5),
-        // ParagraphText(
-        //   text:
-        //       'https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight',
-        // ),
-        // SizedBox(height: 5),
-        // ParagraphText(
-        //   text:
-        //       'https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html',
-        // ),
-        // SizedBox(height: 5),
-        // ParagraphText(
-        //   text:
-        //       'https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm',
-        // ),
-        // ParagraphText(
-        //   text:
-        //       'https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/definition-facts',
-        // ),
       ],
     );
   }
