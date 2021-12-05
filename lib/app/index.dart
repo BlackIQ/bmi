@@ -1,7 +1,10 @@
 import 'package:bmicalculator/app/widgets/drawer/left_drawer.dart';
 import 'package:bmicalculator/app/widgets/drawer/right_drawer.dart';
+import 'package:bmicalculator/app/widgets/post/single_post.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BmiCalculator extends StatefulWidget {
   @override
@@ -9,6 +12,44 @@ class BmiCalculator extends StatefulWidget {
 }
 
 class _BmiCalculatorState extends State<BmiCalculator> {
+  List<Map> links = [
+    {
+      'site': 'WHO',
+      'about': 'Which fruit is good for children?',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Health Education',
+      'about': 'What kind of diet is better?',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Health Education',
+      'about': 'What kind of diet is better?',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Health Education',
+      'about': 'What kind of diet is better?',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Health Education',
+      'about': 'What kind of diet is better?',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Health Education',
+      'about': 'What kind of diet is better?',
+      'url': 'https://google.com',
+    },
+    {
+      'site': 'Health Education',
+      'about': 'What kind of diet is better?',
+      'url': 'https://google.com',
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,43 +68,22 @@ class _BmiCalculatorState extends State<BmiCalculator> {
   }
 
   Widget _build() {
-    return SingleChildScrollView(
-      child: Padding(
-        padding: EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              'Welcome to Body analyser',
-              style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(height: 25),
-            Text(
-              'BMI means Body Mass Index. One of the uses of BMI is to see do we have overweight or are we thin of other body health status',
-              style: TextStyle(
-                fontSize: 15,
-              ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'But how to see we are healthy or not. One of the ways is using this application.',
-              style: TextStyle(
-                fontSize: 15,
-              ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Open left drawer and check the manual to know to use this app. If you want to have a quick start, open right drawer and open calculate BMI. If you already have your BMI or anyone else, again open right drawer and select Categorise the BMI.',
-              style: TextStyle(
-                fontSize: 15,
-              ),
-            ),
-          ],
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Expanded(
+          child: ListView.builder(
+            itemCount: links.length,
+            itemBuilder: (context, index) {
+              return SinglePost(
+                postName: links[index]['site'],
+                describe: links[index]['about'],
+                url: links[index]['url'],
+              );
+            },
+          ),
         ),
-      ),
+      ],
     );
   }
 }
