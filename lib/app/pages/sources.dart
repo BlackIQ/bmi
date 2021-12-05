@@ -93,7 +93,6 @@ class Sources extends StatelessWidget {
             itemBuilder: (context, index) {
               return ListTile(
                 title: Text(
-                  // TODO: Change color to indigo
                   links[index]['site'],
                   style: TextStyle(
                     color: Colors.indigo,
