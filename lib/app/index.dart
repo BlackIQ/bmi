@@ -1,10 +1,10 @@
 import 'package:bmicalculator/app/widgets/drawer/left_drawer.dart';
 import 'package:bmicalculator/app/widgets/drawer/right_drawer.dart';
 import 'package:bmicalculator/app/widgets/post/single_post.dart';
+import 'package:bmicalculator/app/data/posts.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class BmiCalculator extends StatefulWidget {
   @override
@@ -12,44 +12,6 @@ class BmiCalculator extends StatefulWidget {
 }
 
 class _BmiCalculatorState extends State<BmiCalculator> {
-  List<Map> links = [
-    {
-      'site': 'WHO',
-      'about': 'Which fruit is good for children?',
-      'url': 'https://google.com',
-    },
-    {
-      'site': 'Health Education',
-      'about': 'What kind of diet is better?',
-      'url': 'https://google.com',
-    },
-    {
-      'site': 'Health Education',
-      'about': 'What kind of diet is better?',
-      'url': 'https://google.com',
-    },
-    {
-      'site': 'Health Education',
-      'about': 'What kind of diet is better?',
-      'url': 'https://google.com',
-    },
-    {
-      'site': 'Health Education',
-      'about': 'What kind of diet is better?',
-      'url': 'https://google.com',
-    },
-    {
-      'site': 'Health Education',
-      'about': 'What kind of diet is better?',
-      'url': 'https://google.com',
-    },
-    {
-      'site': 'Health Education',
-      'about': 'What kind of diet is better?',
-      'url': 'https://google.com',
-    },
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
