@@ -2,7 +2,7 @@
     package="ir.blackiq.bmi.bmicalculator">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:label="BMI Calculator"
+        android:label="Body Analyser"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
