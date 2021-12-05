@@ -14,7 +14,7 @@ class _BmiCalculatorState extends State<BmiCalculator> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'BMI Calculator',
+          'Body Analyser',
           style: GoogleFonts.nunito(),
         ),
         centerTitle: true,

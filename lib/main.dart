@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.nunitoTextTheme(),
       ),
       debugShowCheckedModeBanner: false,
-      title: 'BMI Calculator',
+      title: 'Body Analyser',
       home: BmiCalculator(),
     );
   }

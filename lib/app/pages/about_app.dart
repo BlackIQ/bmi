@@ -28,11 +28,11 @@ class AboutApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             TitleText(
-              text: 'BMI analyser',
+              text: 'Body Analyser',
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text: 'BMI analyser is a complete app to give you the range of your BMI and analyse it and tell you whitch category are your exactly in.',
+              text: 'Body analyser is a complete app to give you the range of your BMI and analyse it and tell you whitch category are your exactly in.',
             ),
             SizedBox(height: 5),
             ParagraphText(
@@ -50,8 +50,8 @@ class AboutApp extends StatelessWidget {
             BmiSubmitButton(
               submit: () => showAboutDialog(
                 context: context,
-                applicationLegalese: 'BMI analyser, whats out your health',
-                applicationName: 'BMI Analyser',
+                applicationLegalese: 'Body Analyser, whats out your health',
+                applicationName: 'Body Analyser',
                 applicationVersion: '1.0.0',
               ),
               text: 'More details',

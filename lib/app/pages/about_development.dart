@@ -61,7 +61,7 @@ class Development extends StatelessWidget {
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text: 'BMI Analyser is a free open source software that means (FOSS). THis application is licensed under GPL-2 license.',
+              text: 'Body Analyser is a free open source software that means (FOSS). THis application is licensed under GPL-2 license.',
             ),
             SizedBox(height: 5),
             ParagraphText(

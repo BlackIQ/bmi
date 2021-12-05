@@ -27,7 +27,7 @@ class LeftDrawer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'BMI Analyser',
+                  'Body Analyser',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 25,
