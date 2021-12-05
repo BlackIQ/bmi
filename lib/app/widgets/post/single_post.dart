@@ -19,14 +19,14 @@ class SinglePost extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: Container(
-          height: 100,
+          height: 125,
           color: Colors.white,
           child: Row(
             children: <Widget>[
               Container(
                 color: Colors.indigo,
                 width: 60,
-                height: 100,
+                height: 125,
                 child: Icon(
                   Icons.cloud,
                   color: Colors.white,
