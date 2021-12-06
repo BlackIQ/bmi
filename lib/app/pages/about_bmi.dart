@@ -1,7 +1,10 @@
+import 'package:bmicalculator/app/widgets/button/icon_button.dart';
 import 'package:bmicalculator/app/widgets/text/p.dart';
 import 'package:bmicalculator/app/widgets/text/title.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutBmi extends StatelessWidget {
   @override
@@ -82,7 +85,14 @@ class AboutBmi extends StatelessWidget {
               text:
                   'The WHO regards an adult BMI of less than 18.5 as underweight and may indicate malnutrition, an eating disorder, or other health problems, while a BMI equal to or greater than 25 is considered overweight and 30 or more is considered obese. In addition to the principle, international WHO BMI cut-off points (16, 17, 18.5, 25, 30, 35 and 40), four additional cut-off points for at-risk Asians were identified (23, 27.5, 32.5 and 37.5). These ranges of BMI values are valid only as statistical categories.',
             ),
-            SizedBox(height: 5),
+            SizedBox(height: 10),
+            CostumeIconButton(
+              icon: FontAwesomeIcons.wikipediaW,
+              submit: () async {
+                await launch('mailto:amirhosseinmohammadi1380@yahoo.com');
+              },
+              text: 'Read about BMI in Wikipedia',
+            ),
           ],
         ),
       ),
