@@ -1,9 +1,10 @@
-import 'package:bmicalculator/app/widgets/button/button.dart';
+import 'package:bmicalculator/app/widgets/button/icon_button.dart';
 import 'package:bmicalculator/app/widgets/text/p.dart';
 import 'package:bmicalculator/app/widgets/text/title.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Development extends StatelessWidget {
   @override
@@ -76,22 +77,24 @@ class Development extends StatelessWidget {
               text: 'You can see the code in Github on this link:',
             ),
             SizedBox(height: 5),
-            BmiSubmitButton(
+            CostumeIconButton(
+              icon: FontAwesomeIcons.github,
               submit: () async {
                 await launch('https://github.com/BlackIQ/bmi');
               },
-              text: 'Open Github',
+              text: 'Github',
             ),
             SizedBox(height: 5),
             ParagraphText(
               text: 'Again you can download last release from the site too.',
             ),
             SizedBox(height: 5),
-            BmiSubmitButton(
+            CostumeIconButton(
+              icon: FontAwesomeIcons.globe,
               submit: () async {
                 await launch('https://bmi.blackiq.ir');
               },
-              text: 'Open bmi.blackiq.ir',
+              text: 'bmi.blackiq.ir',
             ),
             SizedBox(height: 15),
             SizedBox(height: 15),
@@ -103,25 +106,28 @@ class Development extends StatelessWidget {
               text: 'Hi, I am Amirhossein Mohamamdi. Creator of this applicatin and some other apps. You can contact me front this link below.',
             ),
             SizedBox(height: 5),
-            BmiSubmitButton(
+            CostumeIconButton(
+              icon: FontAwesomeIcons.globe,
               submit: () async {
                 await launch('https://amirhossein.info');
               },
-              text: 'Open amirhossein.info',
+              text: 'amirhossein.info',
             ),
             SizedBox(height: 5),
-            BmiSubmitButton(
+            CostumeIconButton(
+              icon: FontAwesomeIcons.solidEnvelope,
               submit: () async {
                 await launch('mailto:amirhosseinmohammadi1380@yahoo.com');
               },
-              text: 'Email amirhosseinmohammadi1380@yahoo.com',
+              text: 'amirhosseinmohammadi1380@yahoo.com',
             ),
             SizedBox(height: 5),
-            BmiSubmitButton(
+            CostumeIconButton(
+              icon: FontAwesomeIcons.phone,
               submit: () async {
                 await launch('tel:+989014784362');
               },
-              text: 'Call +98 901 478 4362',
+              text: '+98 901 478 4362',
             ),
           ],
         ),
