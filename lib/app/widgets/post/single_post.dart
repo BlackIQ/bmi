@@ -57,13 +57,28 @@ class SinglePost extends StatelessWidget {
                   ),
                 ),
               ),
-              FlatButton(
-                onPressed: () async {
+              GestureDetector(
+                onTap: () async {
                   await launch(url);
                 },
-                child: Icon(
-                  Icons.arrow_forward_ios,
-                  color: Colors.blue,
+                child: Container(
+                  margin: EdgeInsets.only(right: 15),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(50),
+                    ),
+                    border: Border.all(
+                      color: Colors.indigo,
+                    ),
+                  ),
+                  child: Icon(
+                    Icons.open_in_browser,
+                    color: Colors.indigo,
+                    size: 20,
+                  ),
+                  height: 50,
+                  width: 50,
                 ),
               ),
             ],
