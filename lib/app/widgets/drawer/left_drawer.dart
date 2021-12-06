@@ -6,6 +6,7 @@ import 'package:bmicalculator/app/pages/contact.dart';
 import 'package:bmicalculator/app/pages/sources.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LeftDrawer extends StatelessWidget {
@@ -46,7 +47,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'What is BMI',
-            icon: Icons.question_answer,
+            icon: FontAwesomeIcons.question,
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -57,7 +58,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'About app',
-            icon: Icons.info_outline,
+            icon: FontAwesomeIcons.infoCircle,
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -68,7 +69,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'Development',
-            icon: Icons.devices,
+            icon: FontAwesomeIcons.tools,
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -79,7 +80,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'Sources',
-            icon: Icons.format_align_justify,
+            icon: FontAwesomeIcons.listUl,
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -90,7 +91,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'Contact us',
-            icon: Icons.email,
+            icon: FontAwesomeIcons.solidEnvelope,
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -101,14 +102,14 @@ class LeftDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'Open site',
-            icon: Icons.cloud,
+            icon: FontAwesomeIcons.globeAmericas,
             onTap: () async {
               await launch('https://bmi.blackiq.ir');
             },
           ),
           DrawerItemWidget(
             text: 'Exit',
-            icon: Icons.exit_to_app,
+            icon: FontAwesomeIcons.signOutAlt,
             onTap: () => exit(1),
           ),
         ],
