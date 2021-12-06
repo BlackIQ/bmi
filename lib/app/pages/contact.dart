@@ -1,7 +1,8 @@
-import 'package:bmicalculator/app/widgets/button/button.dart';
+import 'package:bmicalculator/app/widgets/button/icon_button.dart';
 import 'package:bmicalculator/app/widgets/text/p.dart';
 import 'package:bmicalculator/app/widgets/text/title.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -36,17 +37,20 @@ class Contact extends StatelessWidget {
               text: 'From website or sending emails.',
             ),
             SizedBox(height: 10),
-            BmiSubmitButton(
+            CostumeIconButton(
+              icon: FontAwesomeIcons.globe,
               submit: () async {
                 await launch('https://bmi.blackiq.ir');
               },
-              text: 'Open bmi.blackiq.ir',
+              text: 'bmi.blackiq.ir',
             ),
-            BmiSubmitButton(
+            SizedBox(height: 5),
+            CostumeIconButton(
+              icon: FontAwesomeIcons.solidEnvelope,
               submit: () async {
                 await launch('mailto:amirhosseinmohammadi1380@yahoo.com');
               },
-              text: 'Email amirhosseinmohammadi1380@yahoo.com',
+              text: 'amirhosseinmohammadi1380@yahoo.com',
             ),
           ],
         ),
