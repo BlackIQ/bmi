@@ -2,6 +2,7 @@ import 'package:bmicalculator/app/bmipages/calculate_bmi.dart';
 import 'package:bmicalculator/app/bmipages/categorise.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RightDrawer extends StatelessWidget {
   @override
@@ -41,7 +42,7 @@ class RightDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'Calculator BMI',
-            icon: Icons.equalizer,
+            icon: FontAwesomeIcons.chartBar,
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -53,7 +54,7 @@ class RightDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'Get category',
-            icon: Icons.filter_list,
+            icon: FontAwesomeIcons.listOl,
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
