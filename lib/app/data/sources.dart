@@ -47,12 +47,14 @@ List<Map> links = [
     'site': 'WHO',
     'about': 'Obesity and overweight',
     'icon': FontAwesomeIcons.globe,
-    'url': 'https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight',
+    'url':
+        'https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight',
   },
   {
     'site': 'NIDDK',
     'about': 'Facts for Adult Overweight & Obesity',
     'icon': FontAwesomeIcons.globe,
-    'url': 'https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/definition-facts',
+    'url':
+        'https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/definition-facts',
   },
 ];
