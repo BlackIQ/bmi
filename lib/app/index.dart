@@ -41,6 +41,7 @@ class _BmiCalculatorState extends State<BmiCalculator> {
                 postName: links[index]['site'],
                 describe: links[index]['about'],
                 url: links[index]['url'],
+                icon: links[index]['icon'],
               );
             },
           ),
