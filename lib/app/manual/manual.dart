@@ -12,47 +12,47 @@ class ManualPage extends StatelessWidget {
           ),
         ),
         title: 'Welcome to Body Analyser',
-        body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
+        body:
+            'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.',
       ),
       PageViewModel(
-          image: ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(50)),
-            child: Image.asset(
-              'assets/icon/bmi.jpg',
-            ),
+        image: ClipRRect(
+          child: Image.asset(
+            'assets/manual/right.png',
           ),
-          title: 'Welcome to Body Analyser',
-          body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
+        ),
+        title: 'How to calculate or analyse?',
+        body:
+            'There are 2 drawers that they contain some items. Main drawer is the right drawer.\nHere are 2 items that one will calculate your BMI and analyse it but he other just take a BMI and analyse it.',
       ),
       PageViewModel(
-          image: ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(50)),
-            child: Image.asset(
-              'assets/icon/bmi.jpg',
-            ),
+        image: ClipRRect(
+          child: Image.asset(
+            'assets/manual/left.png',
           ),
-          title: 'Welcome to Body Analyser',
-          body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
+        ),
+        title: 'App features',
+        body:
+            'Applications details, development and some other stuff are in left drawer.\n',
       ),
       PageViewModel(
-          image: ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(50)),
-            child: Image.asset(
-              'assets/icon/bmi.jpg',
-            ),
+        image: ClipRRect(
+          child: Image.asset(
+            'assets/manual/index.png',
           ),
-          title: 'Welcome to Body Analyser',
-          body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
+        ),
+        title: 'Landing Page',
+        body: 'Landing page is the first page that you come across.\nHere are some good articles about health. Child, old people or normal ages.',
       ),
       PageViewModel(
-          image: ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(50)),
-            child: Image.asset(
-              'assets/icon/bmi.jpg',
-            ),
+        image: ClipRRect(
+          child: Image.asset(
+            'assets/manual/done.jpg',
           ),
-          title: 'Welcome to Body Analyser',
-          body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
+        ),
+        title: 'Done',
+        body:
+            'Tnx for reading. We hope you fully understand how to use the app.\nIf you have any question or see an issues, you can contact us via Email or open an issue in Github',
       ),
     ];
   }
@@ -72,26 +72,24 @@ class ManualPage extends StatelessWidget {
             onSkip: () {
               Navigator.of(context).pop(context);
             },
+            skipColor: Colors.red,
+            doneColor: Colors.green,
+            nextColor: Colors.indigo,
             showSkipButton: true,
             globalBackgroundColor: Colors.grey[100],
             skip: Text(
               'Skip',
-              style: TextStyle(
-                color: Colors.indigo,
-              ),
             ),
             next: Text(
               'Next',
-              style: TextStyle(
-                color: Colors.indigo,
-              ),
             ),
             done: Text(
               'Get started',
               style: TextStyle(
-                color: Colors.indigo,
+                fontWeight: FontWeight.bold,
               ),
             ),
+            // animationDuration: 500,
             dotsDecorator: DotsDecorator(
               size: Size.square(10),
               activeSize: Size(15, 10),
