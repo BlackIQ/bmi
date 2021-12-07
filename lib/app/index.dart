@@ -1,9 +1,11 @@
+import 'package:bmicalculator/app/manual/manual.dart';
 import 'package:bmicalculator/app/widgets/drawer/left_drawer.dart';
 import 'package:bmicalculator/app/widgets/drawer/right_drawer.dart';
 import 'package:bmicalculator/app/widgets/post/single_post.dart';
 import 'package:bmicalculator/app/data/posts.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BmiCalculator extends StatefulWidget {
@@ -26,6 +28,21 @@ class _BmiCalculatorState extends State<BmiCalculator> {
       drawer: LeftDrawer(),
       endDrawer: RightDrawer(),
       body: _build(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => ManualPage(),
+            ),
+          );
+        },
+        child: FaIcon(
+          FontAwesomeIcons.question,
+          color: Colors.white,
+        ),
+        tooltip: 'How to use the application',
+        elevation: 0,
+      ),
     );
   }
 
