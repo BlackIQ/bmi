@@ -105,15 +105,15 @@ class _BmiCalculateState extends State<BmiCalculate> {
                         ),
                         SizedBox(height: 10),
                         BmiSubmitButton(
-                          submit: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) => BmiGetRange(bmi: bmiCalculated),
-                              ),
-                            );
-                          },
-                          text: 'Go to analyse my BMI'
-                        ),
+                            submit: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      BmiGetRange(bmi: bmiCalculated),
+                                ),
+                              );
+                            },
+                            text: 'Go to analyse my BMI'),
                       ],
                     ),
                   )
