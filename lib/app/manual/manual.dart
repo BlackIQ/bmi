@@ -5,38 +5,54 @@ class ManualPage extends StatelessWidget {
   List<PageViewModel> getPages() {
     return [
       PageViewModel(
-        title: 'First Page',
-        body: 'This is a body',
+        image: ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(50)),
+          child: Image.asset(
+            'assets/icon/bmi.jpg',
+          ),
+        ),
+        title: 'Welcome to Body Analyser',
+        body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
       ),
       PageViewModel(
-        image: Image.network(
-            'https://avatars.githubusercontent.com/u/55284339?v=4'),
-        title: 'First Page',
-        body: 'This is a body',
+          image: ClipRRect(
+            borderRadius: BorderRadius.all(Radius.circular(50)),
+            child: Image.asset(
+              'assets/icon/bmi.jpg',
+            ),
+          ),
+          title: 'Welcome to Body Analyser',
+          body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
       ),
       PageViewModel(
-        image: Image.network(
-            'https://avatars.githubusercontent.com/u/55284339?v=4'),
-        title: 'First Page',
-        body: 'This is a body',
+          image: ClipRRect(
+            borderRadius: BorderRadius.all(Radius.circular(50)),
+            child: Image.asset(
+              'assets/icon/bmi.jpg',
+            ),
+          ),
+          title: 'Welcome to Body Analyser',
+          body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
       ),
       PageViewModel(
-        image: Image.network(
-            'https://avatars.githubusercontent.com/u/55284339?v=4'),
-        title: 'First Page',
-        body: 'This is a body',
+          image: ClipRRect(
+            borderRadius: BorderRadius.all(Radius.circular(50)),
+            child: Image.asset(
+              'assets/icon/bmi.jpg',
+            ),
+          ),
+          title: 'Welcome to Body Analyser',
+          body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
       ),
       PageViewModel(
-        image: Image.network(
-            'https://avatars.githubusercontent.com/u/55284339?v=4'),
-        title: 'First Page',
-        body: 'This is a body',
-      ),
-      PageViewModel(
-        image: Image.network(
-            'https://avatars.githubusercontent.com/u/55284339?v=4'),
-        title: 'First Page',
-        body: 'This is a body',
+          image: ClipRRect(
+            borderRadius: BorderRadius.all(Radius.circular(50)),
+            child: Image.asset(
+              'assets/icon/bmi.jpg',
+            ),
+          ),
+          title: 'Welcome to Body Analyser',
+          body: 'With Body analyser you can calculate you BMI and also analyse it.\n\nBut how to use this application?\nPress next to start this short document.'
       ),
     ];
   }
@@ -50,12 +66,16 @@ class ManualPage extends StatelessWidget {
           padding: EdgeInsets.all(20),
           child: IntroductionScreen(
             pages: getPages(),
-            onDone: () {},
-            onSkip: () {},
+            onDone: () {
+              Navigator.of(context).pop(context);
+            },
+            onSkip: () {
+              Navigator.of(context).pop(context);
+            },
             showSkipButton: true,
             globalBackgroundColor: Colors.grey[100],
             skip: Text(
-              'Get started',
+              'Skip',
               style: TextStyle(
                 color: Colors.indigo,
               ),
@@ -67,18 +87,17 @@ class ManualPage extends StatelessWidget {
               ),
             ),
             done: Text(
-              'Lets get started',
+              'Get started',
               style: TextStyle(
                 color: Colors.indigo,
-                fontWeight: FontWeight.bold,
               ),
             ),
             dotsDecorator: DotsDecorator(
-              size: Size.square(10.0),
-              activeSize: Size(20.0, 10.0),
+              size: Size.square(10),
+              activeSize: Size(15, 10),
               activeColor: Colors.indigo,
               color: Colors.grey,
-              spacing: EdgeInsets.symmetric(horizontal: 3.0),
+              spacing: EdgeInsets.symmetric(horizontal: 1),
               activeShape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(50),
               ),
