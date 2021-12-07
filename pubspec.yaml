@@ -28,12 +28,22 @@ flutter:
 
   assets:
     - assets/icon/bmi.jpg
+
+    # Drawer header images
     - assets/left.jpg
     - assets/right.jpg
+
+    # BMI Status images
     - assets/underweight.jpg
     - assets/healthy.jpg
     - assets/overweight.jpg
     - assets/obesity.jpg
+
+    # Manual images
+    - assets/manual/right.png
+    - assets/manual/left.png
+    - assets/manual/index.png
+    - assets/manual/done.jpg
 
 flutter_icons:
   android: true
