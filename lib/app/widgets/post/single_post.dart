@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SinglePost extends StatelessWidget {
@@ -6,11 +7,13 @@ class SinglePost extends StatelessWidget {
     @required this.postName,
     @required this.describe,
     @required this.url,
+    @required this.icon,
   });
 
   final postName;
   final url;
   final describe;
+  final icon;
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +30,11 @@ class SinglePost extends StatelessWidget {
                 color: Colors.indigo,
                 width: 60,
                 height: 125,
-                child: Icon(
-                  Icons.cloud,
-                  color: Colors.white,
+                child: Center(
+                  child: FaIcon(
+                    icon,
+                    color: Colors.white,
+                  ),
                 ),
               ),
               SizedBox(width: 10),
@@ -62,23 +67,39 @@ class SinglePost extends StatelessWidget {
                   await launch(url);
                 },
                 child: Container(
-                  margin: EdgeInsets.only(right: 15),
+                  margin: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(50),
-                    ),
-                    border: Border.all(
-                      color: Colors.indigo,
+                    border: Border(
+                      left: BorderSide(
+                        color: Colors.indigo,
+                      ),
                     ),
                   ),
-                  child: Icon(
-                    Icons.open_in_browser,
-                    color: Colors.indigo,
-                    size: 20,
+                  width: 60,
+                  height: 125,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      FaIcon(
+                        FontAwesomeIcons.chrome,
+                        color: Colors.indigo,
+                        size: 20,
+                      ),
+                      SizedBox(height: 10),
+                      FaIcon(
+                        FontAwesomeIcons.firefox,
+                        color: Colors.indigo,
+                        size: 20,
+                      ),
+                      SizedBox(height: 10),
+                      FaIcon(
+                        FontAwesomeIcons.safari,
+                        color: Colors.indigo,
+                        size: 20,
+                      ),
+                    ],
                   ),
-                  height: 50,
-                  width: 50,
                 ),
               ),
             ],
