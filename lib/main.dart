@@ -16,6 +16,12 @@ class MyApp extends StatelessWidget {
       builder: (context, AsyncSnapshot snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return MaterialApp(
+            theme: ThemeData(
+              primarySwatch: Colors.indigo,
+              textTheme: GoogleFonts.nunitoTextTheme(),
+            ),
+            debugShowCheckedModeBanner: false,
+            title: 'Body Analyser SplashScreen',
             home: SplashScreen(),
           );
         } else {
