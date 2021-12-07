@@ -35,7 +35,8 @@ class Sources extends StatelessWidget {
                 text: 'All sources that we used for our documentation',
               ),
               SizedBox(height: 10),
-              ParagraphText(text: 'Have long press on each item to open in browser'),
+              ParagraphText(
+                  text: 'Have long press on each item to open in browser'),
             ],
           ),
         ),
@@ -63,7 +64,9 @@ class Sources extends StatelessWidget {
                 },
               );
             },
-            separatorBuilder: (context, index) => Divider(color: Colors.indigo,),
+            separatorBuilder: (context, index) => Divider(
+              color: Colors.indigo,
+            ),
           ),
         ),
       ],

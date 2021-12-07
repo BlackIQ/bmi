@@ -34,7 +34,8 @@ class Development extends StatelessWidget {
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text: 'This application is an open-source software that the code is hosted in Github',
+              text:
+                  'This application is an open-source software that the code is hosted in Github',
             ),
             SizedBox(height: 15),
             TitleText(
@@ -46,15 +47,18 @@ class Development extends StatelessWidget {
             ),
             SizedBox(height: 5),
             ParagraphText(
-              text: '- When the is a typo. In this case you can open an issue and tell us there is that happening. You can also fonk the repo and change it but this take lots of time.',
+              text:
+                  '- When the is a typo. In this case you can open an issue and tell us there is that happening. You can also fonk the repo and change it but this take lots of time.',
             ),
             SizedBox(height: 5),
             ParagraphText(
-              text: '- Articles. There may be some new articles that can improve our analyser documentation. So you can add it to repo.',
+              text:
+                  '- Articles. There may be some new articles that can improve our analyser documentation. So you can add it to repo.',
             ),
             SizedBox(height: 5),
             ParagraphText(
-              text: 'UI. If you are a designer or a person who know UI and see there is a issue in user interface, contact us then we will work on it.',
+              text:
+                  'UI. If you are a designer or a person who know UI and see there is a issue in user interface, contact us then we will work on it.',
             ),
             SizedBox(height: 15),
             TitleText(
@@ -62,11 +66,13 @@ class Development extends StatelessWidget {
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text: 'Body Analyser is a free open source software that means (FOSS). THis application is licensed under GPL-2 license.',
+              text:
+                  'Body Analyser is a free open source software that means (FOSS). THis application is licensed under GPL-2 license.',
             ),
             SizedBox(height: 5),
             ParagraphText(
-              text: 'This is a free application. If you see anyone or any site is selling the products, contact us so we will work on it.',
+              text:
+                  'This is a free application. If you see anyone or any site is selling the products, contact us so we will work on it.',
             ),
             SizedBox(height: 15),
             TitleText(
@@ -103,7 +109,8 @@ class Development extends StatelessWidget {
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text: 'Hi, I am Amirhossein Mohamamdi. Creator of this applicatin and some other apps. You can contact me front this link below.',
+              text:
+                  'Hi, I am Amirhossein Mohamamdi. Creator of this applicatin and some other apps. You can contact me front this link below.',
             ),
             SizedBox(height: 5),
             CostumeIconButton(

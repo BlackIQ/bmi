@@ -32,19 +32,23 @@ class AboutApp extends StatelessWidget {
             ),
             SizedBox(height: 10),
             ParagraphText(
-              text: 'Body analyser is a complete app to give you the range of your BMI and analyse it and tell you whitch category are your exactly in.',
+              text:
+                  'Body analyser is a complete app to give you the range of your BMI and analyse it and tell you whitch category are your exactly in.',
             ),
             SizedBox(height: 5),
             ParagraphText(
-              text: 'We have many articles about health that you can get them every morning from the main page.',
+              text:
+                  'We have many articles about health that you can get them every morning from the main page.',
             ),
             SizedBox(height: 5),
             ParagraphText(
-              text: 'One other benefits of this application is that the application is cross platform. If your have an iOS device you can install this application in your iPhone too.',
+              text:
+                  'One other benefits of this application is that the application is cross platform. If your have an iOS device you can install this application in your iPhone too.',
             ),
             SizedBox(height: 5),
             ParagraphText(
-              text: 'To see licenses, version and other things, click in the button below.',
+              text:
+                  'To see licenses, version and other things, click in the button below.',
             ),
             SizedBox(height: 10),
             BmiSubmitButton(
