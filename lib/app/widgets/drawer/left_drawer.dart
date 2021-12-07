@@ -58,7 +58,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           DrawerItemWidget(
             text: 'About app',
-            icon: FontAwesomeIcons.infoCircle,
+            icon: FontAwesomeIcons.mobileAlt,
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
