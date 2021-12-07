@@ -16,6 +16,7 @@ dependencies:
   url_launcher: ^6.0.10
   font_awesome_flutter: ^9.2.0
   introduction_screen: ^2.1.0
+  dots_indicator: ^2.0.0
 
 dev_dependencies:
   flutter_launcher_icons: ^0.9.2
