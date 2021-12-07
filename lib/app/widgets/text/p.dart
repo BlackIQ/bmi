@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ParagraphText extends StatelessWidget {
-  ParagraphText({@required this.text});
+  ParagraphText({
+    @required this.text,
+  });
+
   final text;
 
   @override

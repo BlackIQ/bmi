@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class BmiField extends StatelessWidget {
-  BmiField({required this.controller, required this.label, required this.hint});
+  BmiField({
+    required this.controller,
+    required this.label,
+    required this.hint,
+  });
+
   final controller;
   final label;
   final hint;

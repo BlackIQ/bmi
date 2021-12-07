@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class BmiSubmitButton extends StatelessWidget {
-  BmiSubmitButton({required this.submit, required this.text});
+  BmiSubmitButton({
+    required this.submit,
+    required this.text,
+  });
+
   final submit;
   final text;
 
