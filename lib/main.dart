@@ -1,6 +1,5 @@
-import 'package:bmicalculator/app/screens/manual/manual.dart';
+import 'package:bmicalculator/app/screens/pages/manual.dart';
 import 'package:bmicalculator/app/widgets/drawer/left_drawer.dart';
-import 'package:bmicalculator/app/widgets/drawer/right_drawer.dart';
 import 'package:bmicalculator/app/widgets/post/single_post.dart';
 import 'package:bmicalculator/app/services/posts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -47,7 +46,6 @@ class MyApp extends StatelessWidget {
                 elevation: 0,
               ),
               drawer: LeftDrawer(),
-              endDrawer: RightDrawer(),
               body: _build(),
               floatingActionButton: FloatingActionButton(
                 onPressed: () {
