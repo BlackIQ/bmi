@@ -8,6 +8,7 @@ class SplashScreen extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.all(25),
         child: Column(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Center(
@@ -34,6 +35,14 @@ class SplashScreen extends StatelessWidget {
               'Watch out your health',
               style: TextStyle(
                 fontSize: 20,
+                color: Colors.white,
+              ),
+            ),
+            SizedBox(height: 5),
+            Text(
+              '2.1.3',
+              style: TextStyle(
+                fontSize: 15,
                 color: Colors.white,
               ),
             ),
