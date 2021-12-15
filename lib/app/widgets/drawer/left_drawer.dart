@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:bmicalculator/app/screens/pages/calculate_bmi.dart';
+import 'package:bmicalculator/app/screens/pages/categorise.dart';
 import 'package:bmicalculator/app/screens/pages/about_app.dart';
 import 'package:bmicalculator/app/screens/pages/about_bmi.dart';
 import 'package:bmicalculator/app/screens/pages/about_development.dart';
@@ -46,6 +48,30 @@ class LeftDrawer extends StatelessWidget {
             ),
           ),
           DrawerItemWidget(
+            text: 'Calculator BMI',
+            icon: FontAwesomeIcons.chartBar,
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => BmiCalculate(),
+                ),
+              );
+            },
+          ),
+          DrawerItemWidget(
+            text: 'Get category',
+            icon: FontAwesomeIcons.listOl,
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => Categorise(),
+                ),
+              );
+            },
+          ),
+          DrawerItemWidget(
             text: 'What is BMI',
             icon: FontAwesomeIcons.question,
             onTap: () {
@@ -56,6 +82,7 @@ class LeftDrawer extends StatelessWidget {
               );
             },
           ),
+          Divider(color: Colors.indigo),
           DrawerItemWidget(
             text: 'About app',
             icon: FontAwesomeIcons.mobileAlt,
