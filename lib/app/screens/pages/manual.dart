@@ -28,7 +28,7 @@ class ManualPage extends StatelessWidget {
       PageViewModel(
         image: ClipRRect(
           child: Image.asset(
-            'assets/manual/bmi_items.png',
+            'assets/manual/bmi-items.png',
           ),
         ),
         title: 'BMI features',
@@ -38,17 +38,16 @@ class ManualPage extends StatelessWidget {
       PageViewModel(
         image: ClipRRect(
           child: Image.asset(
-            'assets/manual/left.png',
+            'assets/manual/app-items.png',
           ),
         ),
         title: 'App features',
-        body:
-            'There are application details, development and some other stuff are in second part of drawer.',
+        body: 'Next part is app features. About app, site and even development.\nYou can use sources item to see what articles exactly we used in the app.'
       ),
       PageViewModel(
         image: ClipRRect(
           child: Image.asset(
-            'assets/manual/index.png',
+            'assets/manual/landing.png',
           ),
         ),
         title: 'Landing Page',
