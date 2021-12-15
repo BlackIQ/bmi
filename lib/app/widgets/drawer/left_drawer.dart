@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'package:bmicalculator/app/pages/about_app.dart';
-import 'package:bmicalculator/app/pages/about_bmi.dart';
-import 'package:bmicalculator/app/pages/about_development.dart';
-import 'package:bmicalculator/app/pages/contact.dart';
-import 'package:bmicalculator/app/pages/sources.dart';
+import 'package:bmicalculator/app/screens/pages/about_app.dart';
+import 'package:bmicalculator/app/screens/pages/about_bmi.dart';
+import 'package:bmicalculator/app/screens/pages/about_development.dart';
+import 'package:bmicalculator/app/screens/pages/contact.dart';
+import 'package:bmicalculator/app/screens/pages/sources.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

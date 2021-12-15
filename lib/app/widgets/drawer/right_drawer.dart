@@ -1,5 +1,5 @@
-import 'package:bmicalculator/app/bmipages/calculate_bmi.dart';
-import 'package:bmicalculator/app/bmipages/categorise.dart';
+import 'package:bmicalculator/app/screens/bmipages/calculate_bmi.dart';
+import 'package:bmicalculator/app/screens/bmipages/categorise.dart';
 import 'package:bmicalculator/app/widgets/drawer/items/drawer_items.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
