@@ -51,7 +51,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Version 1.0.0',
+                    'Version 2.1.3',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
