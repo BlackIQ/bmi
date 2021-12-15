@@ -18,12 +18,22 @@ class ManualPage extends StatelessWidget {
       PageViewModel(
         image: ClipRRect(
           child: Image.asset(
-            'assets/manual/right.png',
+            'assets/manual/drawer.png',
           ),
         ),
-        title: 'How to calculate or analyse?',
+        title: 'Drawer items',
         body:
-            'There are 2 drawers that they contain some items. Main drawer is the right drawer.\nHere are 2 items that one will calculate your BMI and analyse it but he other just take a BMI and analyse it.',
+            'There are 2 parts in drawer. First part for BMI features and the next part is for app features or introduction.\nIn next slide we will talk about how to use this features in app.',
+      ),
+      PageViewModel(
+        image: ClipRRect(
+          child: Image.asset(
+            'assets/manual/bmi_items.png',
+          ),
+        ),
+        title: 'BMI features',
+        body:
+            'In this part as we said you can use to calculate or analyse your BMI.\nIf you dont know what exatcly BMI is, tap on third item to read a verified article about BMI.',
       ),
       PageViewModel(
         image: ClipRRect(
@@ -33,7 +43,7 @@ class ManualPage extends StatelessWidget {
         ),
         title: 'App features',
         body:
-            'Applications details, development and some other stuff are in left drawer.\n',
+            'There are application details, development and some other stuff are in second part of drawer.',
       ),
       PageViewModel(
         image: ClipRRect(
@@ -42,7 +52,8 @@ class ManualPage extends StatelessWidget {
           ),
         ),
         title: 'Landing Page',
-        body: 'Landing page is the first page that you come across.\nHere are some good articles about health. Child, old people or normal ages.',
+        body:
+            'Landing page is the first page that you come across.\nHere are some good articles about health. Child, old people or normal ages.',
       ),
       PageViewModel(
         image: ClipRRect(
