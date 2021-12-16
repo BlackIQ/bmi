@@ -3,9 +3,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DrawerItemWidget extends StatelessWidget {
   DrawerItemWidget({
-    required this.text,
-    required this.icon,
-    required this.onTap,
+    this.text,
+    this.icon,
+    this.onTap,
   });
 
   final icon;
