@@ -1,7 +1,3 @@
-MD,
-SelectingSnacksforToddlers,
-https://www.webmd.com/diet/features/estimated-calorie-requirement,
-
 NewYorkTimes,
 Healthsection,
 https://www.nytimes.com/international/section/health,
