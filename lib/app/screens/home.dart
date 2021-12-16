@@ -189,7 +189,6 @@ class Home extends StatelessWidget {
                 postName: snapshot.data.documents[index]['site'],
                 describe: snapshot.data.documents[index]['about'],
                 url: snapshot.data.documents[index]['url'],
-                icon: snapshot.data.documents[index]['icon'],
               );
             },
           );
