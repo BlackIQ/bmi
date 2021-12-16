@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "76705895561",
+    "project_id": "body-analyser",
+    "storage_bucket": "body-analyser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76705895561:android:9c074512bc02038603e258",
+        "android_client_info": {
+          "package_name": "ir.blackiq.bmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76705895561-eib2h6a8s7rahvjh63sb2nth12o2r78v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYBqJk2hOAFoKl3igl5DYdZWtxQGxndoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76705895561-eib2h6a8s7rahvjh63sb2nth12o2r78v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
