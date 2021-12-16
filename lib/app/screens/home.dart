@@ -9,7 +9,7 @@ import 'package:bmicalculator/app/screens/pages/about_bmi.dart';
 import 'package:bmicalculator/app/screens/pages/contact.dart';
 import 'package:bmicalculator/app/screens/pages/sources.dart';
 import 'package:bmicalculator/app/screens/pages/manual.dart';
-import 'package:bmicalculator/app/services/posts.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
@@ -175,23 +175,29 @@ class Home extends StatelessWidget {
   }
 
   Widget _build() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Expanded(
-          child: ListView.builder(
-            itemCount: links.length,
+    final firestore = Firestore.instance;
+    final sites = firestore.collection('sites');
+
+    return StreamBuilder(
+      stream: sites.snapshots(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return ListView.builder(
+            itemCount: snapshot.data.documents.length,
             itemBuilder: (context, index) {
               return SinglePost(
-                postName: links[index]['site'],
-                describe: links[index]['about'],
-                url: links[index]['url'],
-                icon: links[index]['icon'],
+                postName: snapshot.data.documents[index]['site'],
+                describe: snapshot.data.documents[index]['about'],
+                url: snapshot.data.documents[index]['url'],
+                icon: snapshot.data.documents[index]['icon'],
               );
             },
-          ),
-        ),
-      ],
+          );
+        }
+        return Center(
+          child: CircularProgressIndicator(),
+        );
+      },
     );
   }
 }
