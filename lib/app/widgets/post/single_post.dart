@@ -4,16 +4,14 @@ import 'package:url_launcher/url_launcher.dart';
 
 class SinglePost extends StatelessWidget {
   SinglePost({
-    @required this.postName,
-    @required this.describe,
-    @required this.url,
-    @required this.icon,
+    this.postName,
+    this.describe,
+    this.url,
   });
 
   final postName;
   final url;
   final describe;
-  final icon;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +30,7 @@ class SinglePost extends StatelessWidget {
                 height: 125,
                 child: Center(
                   child: FaIcon(
-                    icon,
+                    FontAwesomeIcons.coffee,
                     color: Colors.white,
                   ),
                 ),
