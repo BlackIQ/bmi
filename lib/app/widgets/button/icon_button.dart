@@ -3,9 +3,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CostumeIconButton extends StatelessWidget {
   CostumeIconButton({
-    required this.submit,
-    required this.text,
-    required this.icon,
+    this.submit,
+    this.text,
+    this.icon,
   });
 
   final submit;
