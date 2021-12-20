@@ -10,6 +10,7 @@ class Authentication extends StatefulWidget {
 
 class _AuthenticationState extends State<Authentication> {
   final AuthService _auth = AuthService();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,26 +25,78 @@ class _AuthenticationState extends State<Authentication> {
       body: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          // mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Text(
-              'Welcome to',
-              style: TextStyle(
-                color: Colors.indigo,
-                fontSize: 30,
-              ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Welcome to Body Analyser',
+                  style: TextStyle(
+                    color: Colors.indigo,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 5),
+                Text(
+                  'Body Analyser is an application that you can analyse yur BMI, read helpful articles and so many other features.',
+                  style: TextStyle(
+                    color: Colors.indigo,
+                    fontSize: 15,
+                  ),
+                ),
+                Text(
+                  'BMI means ( Body Mass Index ). With BMI you can see how is your body health status.',
+                  style: TextStyle(
+                    color: Colors.indigo,
+                    fontSize: 15,
+                  ),
+                ),
+                SizedBox(height: 15),
+                Text(
+                  'For more information check out application documentation inside the app.',
+                  style: TextStyle(
+                    color: Colors.indigo,
+                    fontSize: 15,
+                  ),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  'Why should I login with Google?',
+                  style: TextStyle(
+                    color: Colors.indigo,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 5),
+                Text(
+                  'If you login with you Google account, we can analyse our users more exactly and make easier to send you notifications.',
+                  style: TextStyle(
+                    color: Colors.indigo,
+                    fontSize: 15,
+                  ),
+                ),
+                Text(
+                  'Note: We have no access to your Google account private data. This application use Firebase that is a service from Google.',
+                  style: TextStyle(
+                    color: Colors.indigo,
+                    fontSize: 15,
+                  ),
+                ),
+                SizedBox(height: 15),
+                Text(
+                  'Ok, Sign in to continue',
+                  style: TextStyle(
+                    color: Colors.indigo,
+                    fontSize: 15,
+                  ),
+                ),
+              ],
             ),
-            // SizedBox(height: 10),
-            Text(
-              'Body Analyser',
-              style: TextStyle(
-                color: Colors.indigo,
-                fontSize: 50,
-              ),
-            ),
-            SizedBox(height: 40),
             Container(
               height: 50,
               child: ElevatedButton(
@@ -67,13 +120,6 @@ class _AuthenticationState extends State<Authentication> {
                     ),
                   ],
                 ),
-              ),
-            ),
-            SizedBox(height: 20),
-            Text(
-              'You should sign in to continue to the app',
-              style: TextStyle(
-                color: Colors.indigo,
               ),
             ),
           ],
