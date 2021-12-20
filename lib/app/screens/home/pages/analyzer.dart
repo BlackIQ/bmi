@@ -1,7 +1,7 @@
-import 'package:bmicalculator/app/screens/pages/1_underweight.dart';
-import 'package:bmicalculator/app/screens/pages/2_healthy.dart';
-import 'package:bmicalculator/app/screens/pages/3_overweight.dart';
-import 'package:bmicalculator/app/screens/pages/4_obesity.dart';
+import 'package:bmicalculator/app/screens/home/pages/1_underweight.dart';
+import 'package:bmicalculator/app/screens/home/pages/2_healthy.dart';
+import 'package:bmicalculator/app/screens/home/pages/3_overweight.dart';
+import 'package:bmicalculator/app/screens/home/pages/4_obesity.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
