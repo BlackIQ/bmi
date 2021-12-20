@@ -53,6 +53,19 @@ class AuthService {
     }
   }
 
+  Future signinAnon() async {
+    try {
+      AuthResult result = await _auth.signInAnonymously();
+      FirebaseUser user = result.user;
+      return _userFromFirebaseUser(user);
+    } catch (e) {
+      return [
+        null,
+        e.toString(),
+      ];
+    }
+  }
+
   // Signout
   Future signOut() async {
     try {
