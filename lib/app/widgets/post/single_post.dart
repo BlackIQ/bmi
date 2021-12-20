@@ -29,9 +29,14 @@ class SinglePost extends StatelessWidget {
                 width: 60,
                 height: 125,
                 child: Center(
-                  child: FaIcon(
-                    FontAwesomeIcons.coffee,
-                    color: Colors.white,
+                  child: RotationTransition(
+                    turns: AlwaysStoppedAnimation(315 / 360),
+                    child: Text(
+                      'New',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ),
               ),
