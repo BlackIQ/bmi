@@ -1,14 +1,15 @@
+import 'package:bmicalculator/app/screens/home/pages/settings.dart';
 import 'package:bmicalculator/app/widgets/drawer/drawer_items.dart';
-import 'package:bmicalculator/app/screens/pages/about_development.dart';
-import 'package:bmicalculator/app/screens/pages/calculate_bmi.dart';
+import 'package:bmicalculator/app/screens/home/pages/about_development.dart';
+import 'package:bmicalculator/app/screens/home/pages/calculate_bmi.dart';
 import 'package:bmicalculator/app/widgets/post/single_post.dart';
-import 'package:bmicalculator/app/screens/pages/categorise.dart';
+import 'package:bmicalculator/app/screens/home/pages/categorise.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:bmicalculator/app/screens/pages/about_app.dart';
-import 'package:bmicalculator/app/screens/pages/about_bmi.dart';
-import 'package:bmicalculator/app/screens/pages/contact.dart';
-import 'package:bmicalculator/app/screens/pages/sources.dart';
-import 'package:bmicalculator/app/screens/pages/manual.dart';
+import 'package:bmicalculator/app/screens/home/pages/about_app.dart';
+import 'package:bmicalculator/app/screens/home/pages/about_bmi.dart';
+import 'package:bmicalculator/app/screens/home/pages/contact.dart';
+import 'package:bmicalculator/app/screens/home/pages/sources.dart';
+import 'package:bmicalculator/app/screens/home/pages/manual.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -145,6 +146,18 @@ class Home extends StatelessWidget {
               icon: FontAwesomeIcons.globeAmericas,
               onTap: () async {
                 await launch('https://bmi.blackiq.ir');
+              },
+            ),
+            DrawerItemWidget(
+              text: 'Settings',
+              icon: FontAwesomeIcons.cog,
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    fullscreenDialog: true,
+                    builder: (context) => Settings(),
+                  ),
+                );
               },
             ),
             DrawerItemWidget(
