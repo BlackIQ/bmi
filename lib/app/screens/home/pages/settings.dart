@@ -1,6 +1,7 @@
 import 'package:bmicalculator/app/models/user.dart';
 import 'package:bmicalculator/app/services/authentication.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
@@ -30,8 +31,8 @@ class Settings extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () async {
-              await _auth.signOut();
               Navigator.of(context).pop();
+              await _auth.signOut();
             },
             child: Text(
               'Logout',
@@ -56,6 +57,13 @@ class Settings extends StatelessWidget {
         children: <Widget>[
           Center(
             child: CircleAvatar(
+              child: user.profile == null
+                  ? FaIcon(
+                      FontAwesomeIcons.userAlt,
+                      color: Colors.white,
+                      size: 50,
+                    )
+                  : null,
               backgroundColor: Colors.grey,
               radius: 50,
               backgroundImage: user.profile != null
@@ -67,13 +75,13 @@ class Settings extends StatelessWidget {
           ),
           SizedBox(height: 20),
           Text(
-            user.name,
+            user.name == null ? 'Name is not available' : user.name,
             style: TextStyle(
               fontSize: 20,
             ),
           ),
           Text(
-            user.email,
+            user.email == null ? 'Email is not available' : user.email,
             style: TextStyle(
               fontSize: 15,
             ),
@@ -89,7 +97,7 @@ class Settings extends StatelessWidget {
           ),
           SizedBox(height: 5),
           Text(
-              'Login with you Google account helps us to analyse our users and see how many people are using our app. We have no access to your private data or any other things.',
+            'Login with you Google account helps us to analyse our users and see how many people are using our app. We have no access to your private data or any other things.',
             style: TextStyle(
               color: Colors.indigo,
               fontSize: 15,
