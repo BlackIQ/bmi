@@ -7,11 +7,13 @@ class SinglePost extends StatelessWidget {
     this.postName,
     this.describe,
     this.url,
+    this.month,
   });
 
   final postName;
   final url;
   final describe;
+  final month;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class SinglePost extends StatelessWidget {
                   child: RotationTransition(
                     turns: AlwaysStoppedAnimation(315 / 360),
                     child: Text(
-                      'New',
+                      month,
                       style: TextStyle(
                         color: Colors.white,
                       ),
