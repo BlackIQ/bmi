@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Version 3.1.3',
+                    'Version 3.3.3',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
